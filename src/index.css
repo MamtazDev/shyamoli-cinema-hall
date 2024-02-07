@@ -13,7 +13,7 @@ body {
     background-image: url('/src/assets/HeroBanner.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 849px !important;
+    height: 849px ;
     position: absolute;
     top: 0;
     width: 100%;
@@ -39,9 +39,35 @@ max-w-[1280px] w-full mx-auto
 /* border-radius: 100px;
 background: var(--Black-20, #333); */
 
-.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next{
-    background: var(--Black-20, #333); 
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next {
+    background: var(--Black-20, #333);
 }
-.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
     margin-bottom: 68px;
+}
+
+
+
+@media (max-width:768px) {
+    .bg_banner {
+
+        height: 574px !important;
+
+    }
+
+    .swiper-pagination-fraction,
+    .swiper-pagination-custom,
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+
+        bottom: 30% !important;
+    }
+}
+
+.hover_img  {
+
 }
