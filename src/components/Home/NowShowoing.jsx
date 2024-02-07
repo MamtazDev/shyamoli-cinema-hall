@@ -5,7 +5,7 @@ import show3 from '../../assets/show3.png'
 import show4 from '../../assets/show4.png'
 const NowShowoing = () => {
     return (
-        <div className='bg-black pt-[80px] mb-[96px] '>
+        <div className='bg-black pt-[80px] pb-[96px] '>
             <div className='max-w-[1280px] w-full mx-auto'>
                 <h1 className='text-primary text-[36px] font-bold text-center mb-[36px]'>Now Showing</h1>
 

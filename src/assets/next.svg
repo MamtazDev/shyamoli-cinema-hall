@@ -1,0 +1,28 @@
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="28" height="28" fill="#323232"/>
+<g id="Cinema Website">
+<path d="M-2631 -2715C-2631 -2716.1 -2630.1 -2717 -2629 -2717H32690C32691.1 -2717 32692 -2716.1 32692 -2715V5115C32692 5116.1 32691.1 5117 32690 5117H-2629C-2630.1 5117 -2631 5116.1 -2631 5115V-2715Z" fill="#404040"/>
+<path d="M-2629 -2716H32690V-2718H-2629V-2716ZM32691 -2715V5115H32693V-2715H32691ZM32690 5116H-2629V5118H32690V5116ZM-2630 5115V-2715H-2632V5115H-2630ZM-2629 5116C-2629.55 5116 -2630 5115.55 -2630 5115H-2632C-2632 5116.66 -2630.66 5118 -2629 5118V5116ZM32691 5115C32691 5115.55 32690.6 5116 32690 5116V5118C32691.7 5118 32693 5116.66 32693 5115H32691ZM32690 -2716C32690.6 -2716 32691 -2715.55 32691 -2715H32693C32693 -2716.66 32691.7 -2718 32690 -2718V-2716ZM-2629 -2718C-2630.66 -2718 -2632 -2716.66 -2632 -2715H-2630C-2630 -2715.55 -2629.55 -2716 -2629 -2716V-2718Z" fill="white" fill-opacity="0.1"/>
+<g id="Shymoli Cinema Home Page">
+<g id="Movies">
+<rect width="1920" height="1340" transform="translate(-1550 -619)" fill="black"/>
+<g id="Frame 62">
+<g id="Frame 61">
+<g id="Frame 60">
+<g id="Buttons Container">
+<rect x="-183" y="-14" width="225" height="56" rx="12" fill="#0F0F0F"/>
+<g id="Button">
+<rect x="-13.5" y="-13.5" width="55" height="55" rx="7.5" fill="#1A1A1A"/>
+<rect x="-13.5" y="-13.5" width="55" height="55" rx="7.5" stroke="#1F1F1F"/>
+<g id="Icon">
+<path id="Vector" d="M15.75 5.25L24.5 14M24.5 14L15.75 22.75M24.5 14H3.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>
