@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.bg_banner {
+    background-image: url('/src/assets/HeroBanner.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 849px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+/* 
+
+max-w-[1280px] w-full mx-auto
+
+
+*/
