@@ -24,7 +24,8 @@ export default {
         grey_1: "#7B7B7B"
       },
       boxShadow: {
-        button: '0px 1px 2px 0px rgba(16, 24, 40, 0.05)'
+        button: '0px 1px 2px 0px rgba(16, 24, 40, 0.05)',
+        input: '0px 1px 2px 0px rgba(16, 24, 40, 0.05)'
       }
     },
   },

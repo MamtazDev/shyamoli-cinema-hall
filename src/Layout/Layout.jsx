@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom"
-// import { Footer } from "../Shared/Footer/Footer"
+import { Footer } from "../Shared/Footer/Footer"
 import Header from "../Shared/Header/Header"
 
 const Layout = () => {
@@ -7,7 +7,7 @@ const Layout = () => {
         <div className="">
             <Header />
             <Outlet />
-            {/* <Footer /> */}
+            <Footer />
         </div>
     )
 }
