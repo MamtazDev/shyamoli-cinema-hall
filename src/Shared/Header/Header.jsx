@@ -5,7 +5,7 @@ import logo from '../../assets/logo.png'
 
 const Header = () => {
   return (
-    <div className='max-w-[1280px] text-white w-full mx-auto position-fixed top-0 z-30' >
+    <div className='max-w-[1280px] text-white w-full lg:left-[16%] fixed top-0 z-30' >
       <div className="navbar p-0 pt-[30px]">
         <div className="navbar-start">
           <div className="dropdown">

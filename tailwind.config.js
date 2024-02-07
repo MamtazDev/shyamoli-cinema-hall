@@ -1,15 +1,17 @@
 /* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
 export default {
+
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+
   theme: {
     extend: {
 
-      color: {
-        primaryColor: "#FF3D48",
+      textColor: {
+        primary: "#FF3D48",
         white: "#FFFFFF",
         black: "#000",
         grey: "#A6A6A6",
