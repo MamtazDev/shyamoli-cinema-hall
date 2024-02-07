@@ -19,7 +19,7 @@ const UpComingShow = () => {
         <div className='bg-black upcomming_show'>
 
             <div className='max-w-[1280px] w-full mx-auto'>
-                <h1 className='text-primary text-[36px] font-bold text-center'>Now Showing</h1>
+                <h1 className='text-primary text-[36px] font-bold text-center'>Upcoming Shows</h1>
 
                 {/* <div className="grid grid-cols-12">
                     <div className="lg:col-span-4 col-span-12">

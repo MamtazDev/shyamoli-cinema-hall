@@ -154,3 +154,13 @@ upcomming_show .upcomming_show .swiper-button-prev {
         width: 100%;
     }
 }
+
+.hover_img img {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 2.9s;
+}
+
+.hover_img img:hover {
+    transform: scale(1.5) !important;
+}
