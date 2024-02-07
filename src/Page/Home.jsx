@@ -4,6 +4,8 @@ import NowShowoing from '../components/Home/NowShowoing'
 import UpComingShow from '../components/Home/UpComingShow'
 import CustomSlider from '../components/Home/CustomSlider'
 import About from '../components/Home/About'
+import Gallary from '../components/Home/Gallary'
+import Connect from '../components/Home/Connect'
 
 const Home = () => {
     return (
@@ -13,6 +15,8 @@ const Home = () => {
             <UpComingShow />
             {/* <CustomSlider /> */}
             <About />
+            <Gallary />
+            <Connect />
         </>
     )
 }
