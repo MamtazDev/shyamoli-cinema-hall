@@ -17,7 +17,8 @@ export default {
         grey: "#A6A6A6",
       },
       backgroundColor: {
-        grey: "#525252"
+        grey: "#525252",
+        primary: "#FF3D48",
       },
       borderColor: {
         grey: "#A6A6A6",
