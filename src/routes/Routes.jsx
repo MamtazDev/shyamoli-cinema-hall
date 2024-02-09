@@ -4,6 +4,9 @@ import {
 import Layout from "../Layout/Layout";
 import Home from "../Page/Home";
 import MovieDetails from "../components/MovieDetails/MovieDetails";
+import AuthLayout from "../Layout/AuthLayout";
+import Login from "../components/Authentication/Login";
+import Register from "../components/Authentication/Register";
 
 
 const router = createBrowserRouter([
@@ -21,6 +24,20 @@ const router = createBrowserRouter([
             }
         ]
 
+    },
+    {
+        path: '/auth',
+        element: <AuthLayout />,
+        children: [
+            {
+                path: '/auth/login',
+                element: <Login />
+            },
+            {
+                path: '/auth/signup',
+                element: <Register />
+            }
+        ]
     }
 ]);
 

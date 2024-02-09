@@ -29,12 +29,7 @@ const MovieShowSlider = () => {
                         <SwiperSlide>
                             <UpComingShowCards />
                         </SwiperSlide>
-
-
                     </Swiper>
-
-
-
                 </div>
             </div>
         </div>
