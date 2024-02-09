@@ -6,10 +6,10 @@ import AuthButton from './AuthButton'
 import { Link } from 'react-router-dom'
 import Divider from './Divider'
 
-const LoginWithButtons = ({ text, action,dividerW }) => {
+const LoginWithButtons = ({ text, action, dividerW }) => {
     return (
         <>
-            <Divider text={text}  dividerW={dividerW} />
+            <Divider text={text} dividerW={dividerW} />
 
             <div className='flex flex-col gap-[20px]'>
                 <button className='w-full py-[12px] bg-[#232323] rounded-[8px] text-base font-semibold text-white flex gap-[16px] justify-center '>
@@ -24,7 +24,11 @@ const LoginWithButtons = ({ text, action,dividerW }) => {
             </div>
 
             <div className="text-center">
-                <Link to={`${action === "Register" ? "/auth/login" : "/auth/signup"}`} className='text-base text-[#9CA4AB] font-medium '>Don’t have an account? <span className='text-primary' > {action === "Register" ? "Login" : "Register"}</span></Link>
+                <Link to={`${action === "Register" ? "/auth/login" : "/auth/signup"}`} className='text-base text-[#9CA4AB] font-medium '>
+
+                    {action === "Register" ? "Already have an account?" :"Don’t have an account?"}
+
+                    <span className='text-primary' > {action === "Register" ? "Login" : "Register"}</span></Link>
             </div>
 
         </>

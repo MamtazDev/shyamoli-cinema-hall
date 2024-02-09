@@ -4,7 +4,7 @@ import AuthFooter from '../Shared/Footer/AuthFooter'
 
 const AuthLayout = () => {
     return (
-        <div className='bg-[#141414] py-[80px]'>
+        <div className='bg-[#141414] py-[80px] h-[100vh]'>
 
             <Outlet />
 

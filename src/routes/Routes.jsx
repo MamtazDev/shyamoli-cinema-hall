@@ -7,6 +7,9 @@ import MovieDetails from "../components/MovieDetails/MovieDetails";
 import AuthLayout from "../Layout/AuthLayout";
 import Login from "../components/Authentication/Login";
 import Register from "../components/Authentication/Register";
+import VerifyPhone from "../components/Authentication/VerifyPhone";
+import Gallary from "../components/Home/Gallary";
+import GallaryPage from "../Page/GallaryPage";
 
 
 const router = createBrowserRouter([
@@ -21,6 +24,10 @@ const router = createBrowserRouter([
             {
                 path: '/movieDetails',
                 element: <MovieDetails />
+            },
+            {
+                path: '/gallary',
+                element: <GallaryPage />
             }
         ]
 
@@ -36,6 +43,10 @@ const router = createBrowserRouter([
             {
                 path: '/auth/signup',
                 element: <Register />
+            },
+            {
+                path: '/auth/verify',
+                element: <VerifyPhone />
             }
         ]
     }
