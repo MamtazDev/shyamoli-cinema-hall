@@ -1,0 +1,53 @@
+/* moviedetails_slider */
+.moviedetails_slider .swiper-button-next {
+    right: 0;
+    top: 25px;
+    border: 0.865px solid var(--Colors-neutral-800, #262626);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 45px;
+    background-color: #141414;
+
+}
+
+.moviedetails_slider .swiper-button-prev {
+    left: 92% !important;
+    top: 25px;
+    border: 0.865px solid var(--Colors-neutral-800, #262626);
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    background-color: #141414;
+}
+
+.moviedetails_slider .swiper {
+    padding-top: 80px;
+}
+
+.moviedetails_slider .swiper-button-next:after {
+    content: '' !important;
+    display: flex;
+    width: 20px;
+    height: 20px;
+
+    background-image: url(/src/assets/castra.png) !important;
+    background-repeat: no-repeat;
+
+}
+
+.moviedetails_slider .swiper-button-prev:after {
+    content: '' !important;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/src/assets/castla.png) !important;
+    background-repeat: no-repeat;
+
+}
