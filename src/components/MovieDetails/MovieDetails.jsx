@@ -16,9 +16,9 @@ const MovieDetails = () => {
                         </div>
                     </div>
 
-
                     <div className="col-span-12 lg:col-span-8">
-                            <MovieDetailsCard />
+                        
+                        <MovieDetailsCard />
 
                     </div>
                 </div>

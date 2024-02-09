@@ -4,6 +4,7 @@ import available from '../../assets/available.png'
 import greyStar from '../../assets/greyrating.svg'
 import redStar from '../../assets/redrating.png'
 import halfStar from '../../assets/halfstar.png'
+import gernes from '../../assets/genre.png';
 import Cast from './Cast'
 
 const MovieDetailsCard = () => {
@@ -29,9 +30,9 @@ const MovieDetailsCard = () => {
                         <p className='text-[20px] font-medium leading-[28px] text-white '>2023</p>
                     </div>
 
+
                     <div>
                         <h6 className='text-lg text-[#999] mb-[12px] flex gap-[4px] items-center'><img src={available} alt="" /> Available Languages</h6>
-
                         <div className='flex gap-[10px] items-center'>
                             <button className='py-[8px] px-[14px] bg-[#141414] border border-[#262626] rounded-[8px] text-lg text-normal leading-[28px] '>English</button>
                             <button className='py-[8px] px-[14px] bg-[#141414] border border-[#262626] rounded-[8px] text-lg text-normal leading-[28px] '>Bangla</button>
@@ -41,8 +42,6 @@ const MovieDetailsCard = () => {
                     {/* rating */}
                     <div>
                         <h6 className='text-lg text-[#999] mb-[12px] flex gap-[4px] items-center'><img src={greyStar} alt="greystar" />Ratings</h6>
-
-
                         <div className=' bg-[#141414] border border-[#262626] rounded-[8px] p-[16px]  text-lg text-medium leading-[28px] '>
                             <p>IMDb</p>
                             <div className='flex gap-[2px] items-center '>
@@ -57,6 +56,16 @@ const MovieDetailsCard = () => {
                         </div>
 
                     </div>
+                    {/*  */}
+                    <div>
+                        <h6 className='text-lg text-[#999] mb-[12px] flex gap-[4px] items-center'><img src={gernes} alt="" />Gernes</h6>
+                        <div className='flex gap-[10px] items-center'>
+                            <button className='py-[8px] px-[14px] bg-[#141414] border border-[#262626] rounded-[8px] text-lg text-normal leading-[28px] '>Action</button>
+                            <button className='py-[8px] px-[14px] bg-[#141414] border border-[#262626] rounded-[8px] text-lg text-normal leading-[28px] '>Adventure</button>
+                        </div>
+                    </div>
+
+
                 </div>
 
                 {/* cast */}

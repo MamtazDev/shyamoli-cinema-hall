@@ -164,3 +164,58 @@ upcomming_show .upcomming_show .swiper-button-prev {
 .hover_img img:hover {
     transform: scale(1.5) !important;
 }
+
+
+
+/* cast_slider */
+.cast_slider .swiper-button-next {
+    right: 0;
+    top: 25px;
+    border: 0.865px solid var(--Colors-neutral-800, #262626);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    /* padding: 12px; */
+    width: 45px;
+    
+}
+
+.cast_slider .swiper-button-prev {
+    left: 87% !important;
+    top: 25px;
+    border: 0.865px solid var(--Colors-neutral-800, #262626);
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+}
+
+.cast_slider .swiper {
+    padding-top: 80px;
+}
+
+.cast_slider .swiper-button-next:after {
+    content: '' !important;
+    display: flex;
+    width: 20px;
+    height: 20px;
+
+    background-image: url(/src/assets/castra.png) !important;
+    background-repeat: no-repeat;
+
+}
+
+.cast_slider .swiper-button-prev:after {
+    content: '' !important;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/src/assets/castla.png) !important;
+    background-repeat: no-repeat;
+
+}
