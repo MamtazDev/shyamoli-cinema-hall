@@ -10,6 +10,7 @@ import Register from "../components/Authentication/Register";
 import VerifyPhone from "../components/Authentication/VerifyPhone";
 import Gallary from "../components/Home/Gallary";
 import GallaryPage from "../Page/GallaryPage";
+import Steppers from "../Page/Steppers";
 
 
 const router = createBrowserRouter([
@@ -25,12 +26,20 @@ const router = createBrowserRouter([
                 path: '/movieDetails',
                 element: <MovieDetails />
             },
+            
+            {
+                path: '/stepper',
+                element: <Steppers />
+            },
             {
                 path: '/gallary',
                 element: <GallaryPage />
+            },
+            {
+                path: '/stepper',
+                element: <Steppers />
             }
         ]
-
     },
     {
         path: '/auth',

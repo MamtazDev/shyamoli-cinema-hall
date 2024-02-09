@@ -6,6 +6,7 @@ import logo from '../../assets/logo.png'
 const Header = () => {
 
   // lg:left-[16%] fixed top-0 z-30
+  
   return (
     <div className='absolute z-50 w-full'>
       <div className={`w-full text-white  `} >

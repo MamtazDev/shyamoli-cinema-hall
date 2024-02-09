@@ -1,0 +1,52 @@
+.date_select_slider .swiper-button-next{
+    border: 0.865px solid #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    border-radius: var(--Font-Size-3xl, 30px);
+    background: rgba(255, 255, 255, 0.26);
+    backdrop-filter: blur(10px);
+
+}
+.date_select_slider .swiper-button-prev{
+    border: 0.865px solid #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    border-radius: var(--Font-Size-3xl, 30px);
+    background: rgba(255, 255, 255, 0.26);
+    backdrop-filter: blur(10px);
+
+}
+
+
+
+.date_select_slider .swiper-button-prev:after {
+    content: '' !important;
+    display: flex;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/src/assets/datela.png) !important;
+    background-repeat: no-repeat;
+
+}
+
+
+
+.date_select_slider .swiper-button-next:after {
+    content: '' !important;
+    display: flex;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/src/assets/datera.svg) !important;
+    background-repeat: no-repeat;
+
+}
