@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react'
 import show from '../../assets/selectMovie.png';
 import DateSelect from './DateSelect';
@@ -10,7 +11,7 @@ const SelectMovie = ({ onNext }) => {
             <div className='mt-[32px]'>
                 <h2 className='text-primary text-[30px] font-bold leading-[30px] mb-[36px] '> Select Movie</h2>
 
-                {[1, 2, 3, 4, 5].map((data) => (
+                {[1].map((data) => (
                     <>
                         <div className="grid grid-cols-12 gap-[32px]">
                             <div className="col-span-12 lg:col-span-3">

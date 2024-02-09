@@ -221,3 +221,13 @@ upcomming_show .upcomming_show .swiper-button-prev {
     background-repeat: no-repeat;
 
 }
+
+
+
+.stepper a:after{
+    content: url('/src/assets/check.svg') !important;
+}
+
+.react-stepper-horizontal {
+    border-width: 11px; /* Set the desired height */
+}
