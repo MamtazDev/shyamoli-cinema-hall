@@ -62,8 +62,8 @@ export default Steppers;
 const StepOne = ({ onNext }) => {
     return (
         <div>
-            <SelectMovie />
-            <button onClick={onNext}>Next</button>
+            <SelectMovie onNext={onNext} />
+            {/* <button onClick={onNext}>Purchase Now</button> */}
         </div>
     );
 };
