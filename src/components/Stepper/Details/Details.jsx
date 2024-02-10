@@ -1,14 +1,14 @@
 import React from 'react'
 
-const Details = () => {
+const Details = ({onNext}) => {
     return (
         <>
-            <div className='mt-[32px]'>
+            <div className='mt-[32px] pb-[80px]'>
                 <h2 className='text-primary text-[30px] font-bold leading-[30px] mb-[36px] '>Details</h2>
 
                 <div className='p-[32px] bg-[#1A1A1A]  border border-[#262626] rounded-[12px]'>
                     <div className='mb-[20px]'>
-                        <p>Details</p>
+                        <p className='text-[24px] font-semibold leading-[32px] text-center'>Details</p>
                     </div>
                     <div className='py-[16px] px-[12px] border border-[#FFFFFF21] bg-[#1C1C1C] lg:max-w-[576px] w-full mx-auto  ' >
                         <div className='flex flex-col gap-[8px] text-sm font-normal leading-[20px] mb-[16px]'>
@@ -26,7 +26,9 @@ const Details = () => {
 
                     </div>
 
-
+                    <div className="flex flex-col items-center gap-[12px] justify-center mt-[32px]  ">
+                        <button onClick={onNext} className='max-w-[462px] w-full bg-[#FF3D48] rounded-[8px] shadow-button py-[16px] font-semibold text-white text-base'>Next</button>
+                    </div>
                 </div>
             </div>
 

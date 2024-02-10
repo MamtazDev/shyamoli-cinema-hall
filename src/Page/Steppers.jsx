@@ -7,6 +7,7 @@ import BuyTickets from '../components/Stepper/BuyTickets/BuyTickets';
 import AvailAbleMovieTime from '../components/Stepper/AvailAbleMovieTime';
 import AvailableSeats from '../components/Stepper/AvailableSeats/AvailableSeats';
 import Details from '../components/Stepper/Details/Details';
+import TicketSummary from '../components/Stepper/TicketSummary/TicketSummary';
 
 const Steppers = () => {
     const [activeStep, setActiveStep] = useState(0);
@@ -16,9 +17,10 @@ const Steppers = () => {
         { title: 'Buy Tickets', completed: false, icon: <img src={check} alt="Checkmark" />, component: <StepTwo onNext={() => handleNextStep()} /> },
         { title: 'Available Seats', completed: false, icon: <img src={check} alt="Checkmark" />, component: <StepThree onNext={() => handleNextStep()} /> },
         { title: 'Details', completed: false, icon: <img src={check} alt="Checkmark" />, component: <StepFour onNext={() => handleNextStep()} /> },
-        { title: 'Ticket Summary', completed: false, icon: <img src={check} alt="Checkmark" />, component: <StepOne onNext={() => handleNextStep()} /> },
-        { title: 'Payments', completed: false, icon: <img src={check} alt="Checkmark" />, component: <StepTwo onNext={() => handleNextStep()} /> },
-        { title: 'Confirmation', completed: false, icon: <img src={check} alt="Checkmark" />, component: <StepThree onNext={() => handleNextStep()} /> },
+        
+        { title: 'Ticket Summary', completed: false, icon: <img src={check} alt="Checkmark" />, component: <StepFive onNext={() => handleNextStep()} /> },
+        { title: 'Payments', completed: false, icon: <img src={check} alt="Checkmark" />, component: <StepSix onNext={() => handleNextStep()} /> },
+        { title: 'Confirmation', completed: false, icon: <img src={check} alt="Checkmark" />, component: <StepSeven onNext={() => handleNextStep()} /> },
         { title: 'Select Movie', completed: false, component: <StepOne onNext={() => handleNextStep()} /> },
 
     ];
@@ -94,6 +96,29 @@ const StepThree = ({ onNext }) => {
 };
 
 const StepFour = ({ onNext }) => {
+    return (
+        <div>
+            <Details onNext={onNext} />
+        </div>
+    );
+};
+const StepFive = ({ onNext }) => {
+    return (
+        <div>
+            <TicketSummary onNext={onNext} />
+        </div>
+    );
+};
+
+const StepSix = ({ onNext }) => {
+    return (
+        <div>
+            <AvailableSeats onNext={onNext} />
+        </div>
+    );
+};
+
+const StepSeven = ({ onNext }) => {
     return (
         <div>
             <Details onNext={onNext} />
