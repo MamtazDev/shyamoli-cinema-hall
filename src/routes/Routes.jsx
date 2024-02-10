@@ -34,10 +34,6 @@ const router = createBrowserRouter([
             {
                 path: '/gallary',
                 element: <GallaryPage />
-            },
-            {
-                path: '/stepper',
-                element: <Steppers />
             }
         ]
     },

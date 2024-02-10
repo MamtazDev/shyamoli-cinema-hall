@@ -4,6 +4,9 @@ import Stepper from 'react-stepper-horizontal';
 import check from '../assets/check.svg'
 import SelectMovie from '../components/Stepper/SelectMovie';
 import BuyTickets from '../components/Stepper/BuyTickets/BuyTickets';
+import AvailAbleMovieTime from '../components/Stepper/AvailAbleMovieTime';
+import AvailableSeats from '../components/Stepper/AvailableSeats/AvailableSeats';
+import Details from '../components/Stepper/Details/Details';
 
 const Steppers = () => {
     const [activeStep, setActiveStep] = useState(0);
@@ -57,7 +60,7 @@ const Steppers = () => {
                     circleFontSize={0}
                     completeTitleColor="#FFFFFF80"
                     activeTitleColor="#FFFFFF80"
-                    
+
                 />
                 <div className="buttons-container">
                     {activeStep > 0 && <button onClick={handlePrevStep}>Back</button>}
@@ -85,8 +88,7 @@ const StepTwo = ({ onNext }) => {
 const StepThree = ({ onNext }) => {
     return (
         <div>
-            <p>Step Three Content</p>
-            <button onClick={onNext}>Next</button>
+            <AvailableSeats onNext={onNext} />
         </div>
     );
 };
@@ -94,8 +96,7 @@ const StepThree = ({ onNext }) => {
 const StepFour = ({ onNext }) => {
     return (
         <div>
-            <p>Step Four Content</p>
-            <button onClick={onNext}>Next</button>
+            <Details onNext={onNext} />
         </div>
     );
 };
