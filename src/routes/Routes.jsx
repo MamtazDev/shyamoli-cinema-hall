@@ -13,6 +13,7 @@ import GallaryPage from "../Page/GallaryPage";
 import Steppers from "../Page/Steppers";
 import ContactUs from "../Page/ContactUs";
 import DownloadTicket from "../Page/DownloadTicket";
+import { PremiumTicket } from "../Page/PremiumTicket";
 
 
 const router = createBrowserRouter([
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
             {
                 path: '/downloadTicket',
                 element: <DownloadTicket />
+            },
+            {
+                path: '/premiumTicket',
+                element: <PremiumTicket />
             }
         ]
     },
