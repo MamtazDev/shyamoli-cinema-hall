@@ -27,7 +27,6 @@ const AvailAbleMovieTime = () => {
                     </div>
                     <div onClick={handleActive} className={` py-[14px] px-[20px] w-fit rounded-[8px] cursor-pointer p-[10px] text-center ${active ? "bg-white border " : "rounded-md border border-gray-400 opacity-40"} `}>
                         <p className={` text-base font-medium leading-[28px]  ${active ? "text-[#2B2B2B]" : "text-[#A6A6A6]"}`}>8:00 PM</p>
-
                     </div>
                 </div>
             </div>

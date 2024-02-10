@@ -8,6 +8,8 @@ import AvailAbleMovieTime from '../components/Stepper/AvailAbleMovieTime';
 import AvailableSeats from '../components/Stepper/AvailableSeats/AvailableSeats';
 import Details from '../components/Stepper/Details/Details';
 import TicketSummary from '../components/Stepper/TicketSummary/TicketSummary';
+import Payments from '../components/Stepper/Payments/Payments';
+import Confirmation from '../components/Stepper/Confirmation/Confirmation';
 
 const Steppers = () => {
     const [activeStep, setActiveStep] = useState(0);
@@ -17,7 +19,7 @@ const Steppers = () => {
         { title: 'Buy Tickets', completed: false, icon: <img src={check} alt="Checkmark" />, component: <StepTwo onNext={() => handleNextStep()} /> },
         { title: 'Available Seats', completed: false, icon: <img src={check} alt="Checkmark" />, component: <StepThree onNext={() => handleNextStep()} /> },
         { title: 'Details', completed: false, icon: <img src={check} alt="Checkmark" />, component: <StepFour onNext={() => handleNextStep()} /> },
-        
+
         { title: 'Ticket Summary', completed: false, icon: <img src={check} alt="Checkmark" />, component: <StepFive onNext={() => handleNextStep()} /> },
         { title: 'Payments', completed: false, icon: <img src={check} alt="Checkmark" />, component: <StepSix onNext={() => handleNextStep()} /> },
         { title: 'Confirmation', completed: false, icon: <img src={check} alt="Checkmark" />, component: <StepSeven onNext={() => handleNextStep()} /> },
@@ -113,7 +115,7 @@ const StepFive = ({ onNext }) => {
 const StepSix = ({ onNext }) => {
     return (
         <div>
-            <AvailableSeats onNext={onNext} />
+            <Payments onNext={onNext} />
         </div>
     );
 };
@@ -121,7 +123,7 @@ const StepSix = ({ onNext }) => {
 const StepSeven = ({ onNext }) => {
     return (
         <div>
-            <Details onNext={onNext} />
+            <Confirmation onNext={onNext} />
         </div>
     );
 };
