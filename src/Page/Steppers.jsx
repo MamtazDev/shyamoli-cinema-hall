@@ -83,47 +83,37 @@ const StepOne = ({ onNext }) => {
 
 const StepTwo = ({ onNext }) => {
     return (
-        <div>
-            <BuyTickets onNext={onNext} />
-        </div>
+        <BuyTickets onNext={onNext} />
+
     );
 };
 
 const StepThree = ({ onNext }) => {
     return (
-        <div>
-            <AvailableSeats onNext={onNext} />
-        </div>
+        <AvailableSeats onNext={onNext} />
+
     );
 };
 
 const StepFour = ({ onNext }) => {
     return (
-        <div>
-            <Details onNext={onNext} />
-        </div>
+        <Details onNext={onNext} />
     );
 };
 const StepFive = ({ onNext }) => {
     return (
-        <div>
-            <TicketSummary onNext={onNext} />
-        </div>
+        <TicketSummary onNext={onNext} />
     );
 };
 
 const StepSix = ({ onNext }) => {
     return (
-        <div>
-            <Payments onNext={onNext} />
-        </div>
+        <Payments onNext={onNext} />
     );
 };
 
 const StepSeven = ({ onNext }) => {
     return (
-        <div>
-            <Confirmation onNext={onNext} />
-        </div>
+        <Confirmation onNext={onNext} />
     );
 };

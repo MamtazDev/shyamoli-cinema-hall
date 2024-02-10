@@ -11,6 +11,7 @@ import VerifyPhone from "../components/Authentication/VerifyPhone";
 import Gallary from "../components/Home/Gallary";
 import GallaryPage from "../Page/GallaryPage";
 import Steppers from "../Page/Steppers";
+import ContactUs from "../Page/ContactUs";
 
 
 const router = createBrowserRouter([
@@ -26,14 +27,18 @@ const router = createBrowserRouter([
                 path: '/movieDetails',
                 element: <MovieDetails />
             },
-            
+
             {
-                path: '/stepper',
+                path: '/buyTickets',
                 element: <Steppers />
             },
             {
                 path: '/gallary',
                 element: <GallaryPage />
+            },
+            {
+                path: '/contactUs',
+                element: <ContactUs />
             }
         ]
     },
