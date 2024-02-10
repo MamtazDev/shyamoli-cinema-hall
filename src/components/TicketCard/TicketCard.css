@@ -1,0 +1,12 @@
+.ticket_card {
+    display: flex;
+    width: 360px;
+    padding: 24px 0px;
+    flex-direction: column;
+    /* align-items: start; */
+    gap: 24px;
+    border-radius: 16px;
+    /* border: 1px solid #652647; */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(159deg, #041027 -2.46%, #112131 53.26%, #2B3848 92.55%, #556171 126.16%);
+    box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.25);
+}

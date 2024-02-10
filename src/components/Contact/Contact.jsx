@@ -43,17 +43,17 @@ const Contact = () => {
                                     <textarea placeholder='Enter your Message' className='h-[163px] w-full bg-transparent border border-[#7B7B7B] rounded-[8px] py-[10px] px-[12px]'></textarea>
                                 </div>
                                 <div>
-                                    <div className='flex items-center gap-[10px] mb-[30px]'>
+                                    <div className='flex  justify-between  items-center gap-[10px] mb-[30px]'>
                                         {/* <input className='h-[28px] w-[28px] bg-primary' type="checkbox" name="" id="" /> */}
 
-                                        <label className="container">  <p className='text-[#999] text-base font-normal leading-[24px] '>I agree with Terms of Use and Privacy Policy</p>
+                                        <label className="flex items-center container1">  <p className='text-[#999] text-base font-normal leading-[24px] '>I agree with Terms of Use <br/> and Privacy Policy</p>
                                             <input type="checkbox" />
                                             <span className="checkmark"></span>
                                         </label>
 
-                                      
+
+                                        <button className='max-w-[236px] text-lg bg-primary hover:text-[#FF3D48] rounded-[8px] hover:bg-transparent border border-[#FF3D48] font-semibold leading-[28px] w-full py-[16px] text-white'>Send Message</button>
                                     </div>
-                                    <button className='text-lg bg-primary hover:text-[#FF3D48] hover:bg-transparent border border-[#FF3D48] font-semibold leading-[28px] w-full py-[16px] text-white'>Send Message</button>
 
 
                                 </div>

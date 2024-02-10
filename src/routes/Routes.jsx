@@ -12,6 +12,7 @@ import Gallary from "../components/Home/Gallary";
 import GallaryPage from "../Page/GallaryPage";
 import Steppers from "../Page/Steppers";
 import ContactUs from "../Page/ContactUs";
+import DownloadTicket from "../Page/DownloadTicket";
 
 
 const router = createBrowserRouter([
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
             {
                 path: '/contactUs',
                 element: <ContactUs />
+            },
+            {
+                path: '/downloadTicket',
+                element: <DownloadTicket />
             }
         ]
     },

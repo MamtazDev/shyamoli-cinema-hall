@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Details = ({onNext}) => {
+const Details = ({ onNext }) => {
     return (
         <>
             <div className='mt-[32px] pb-[80px]'>
@@ -23,7 +23,6 @@ const Details = ({onNext}) => {
                                 <a href="#" className='text-primary'>Verify Number</a>
                             </div>
                         </div>
-
                     </div>
 
                     <div className="flex flex-col items-center gap-[12px] justify-center mt-[32px]  ">

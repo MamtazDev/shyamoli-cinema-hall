@@ -22,8 +22,8 @@ const Header = () => {
                 <li><Link to="#">Show Times</Link></li>
                 <li><Link to="/buyTickets">Buy Tickets</Link></li>
                 <li><Link to="/gallary">Gallery</Link></li>
-                <li><Link to="#">Contact Us</Link></li>
-                <li><Link to="#" className="border border-[#FF3D48] bg-[#FF3D48] hover:text-[#FF3D48] hover:border-[#FF3D48] hover:bg-transparent px-[16px] py-[10px] rounded-[8px] shadow-button"> Get Started</Link></li>
+                <li><Link to="/contactUs">Contact Us</Link></li>
+                <li><Link to="/downloadTicket" className="border border-[#FF3D48] bg-[#FF3D48] hover:text-[#FF3D48] hover:border-[#FF3D48] hover:bg-transparent px-[16px] py-[10px] rounded-[8px] shadow-button"> Get Started</Link></li>
               </ul>
             </div>
             <a className="text-xl btn btn-ghost">
@@ -36,8 +36,8 @@ const Header = () => {
               <li><Link to="#">Show Times</Link></li>
               <li><Link to="/buyTickets">Buy Tickets</Link></li>
               <li><Link to="/gallary">Gallery</Link></li>
-              <li><Link to="#">Contact Us</Link></li>
-              <li><Link to="#" className="border border-[#FF3D48] bg-[#FF3D48] hover:text-[#FF3D48] hover:border-[#FF3D48] hover:bg-transparent px-[16px] py-[10px] rounded-[8px] shadow-button " > Get Started</Link></li>
+              <li><Link to="/contactUs">Contact Us</Link></li>
+              <li><Link to="/downloadTicket" className="border border-[#FF3D48] bg-[#FF3D48] hover:text-[#FF3D48] hover:border-[#FF3D48] hover:bg-transparent px-[16px] py-[10px] rounded-[8px] shadow-button " > Get Started</Link></li>
 
             </ul>
           </div>
