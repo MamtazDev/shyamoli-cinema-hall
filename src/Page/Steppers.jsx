@@ -10,6 +10,9 @@ import Details from '../components/Stepper/Details/Details';
 import TicketSummary from '../components/Stepper/TicketSummary/TicketSummary';
 import Payments from '../components/Stepper/Payments/Payments';
 import Confirmation from '../components/Stepper/Confirmation/Confirmation';
+import { FaCheckCircle } from "react-icons/fa";
+
+
 
 const Steppers = () => {
     const [activeStep, setActiveStep] = useState(0);
@@ -24,13 +27,19 @@ const Steppers = () => {
         { title: 'Payments', completed: false, icon: <img src={check} alt="Checkmark" />, component: <StepSix onNext={() => handleNextStep()} /> },
         { title: 'Confirmation', completed: false, icon: <img src={check} alt="Checkmark" />, component: <StepSeven onNext={() => handleNextStep()} /> },
         { title: 'Select Movie', completed: false, component: <StepOne onNext={() => handleNextStep()} /> },
-
     ];
+
+    // const handleNextStep = () => {
+    //     const updatedSteps = [...steps];
+    //     updatedSteps[activeStep].completed = true;
+    //     setActiveStep(activeStep + 1);
+    // };
 
     const handleNextStep = () => {
         const updatedSteps = [...steps];
         updatedSteps[activeStep].completed = true;
         setActiveStep(activeStep + 1);
+        setSteps(updatedSteps); // Update the steps state
     };
 
     const handlePrevStep = () => {
@@ -50,13 +59,17 @@ const Steppers = () => {
             {/* <img src={check} alt="Checkmark" /> */}
             <div className='max-w-[1280px] w-full mx-auto '>
                 <Stepper
+                    // steps={steps.map((step, index) => ({
+                    //     title: step.title,
+                    //     ...(step.completed && { icon: step.icon }),
+                    // }))}
                     steps={steps.map((step, index) => ({
                         title: step.title,
-                        ...(step.completed && { icon: step.icon }),
+                        ...(step.completed && { icon: <FaCheckCircle /> }), // Assigning checkmark icon to completed steps
                     }))}
                     activeStep={activeStep}
                     onClick={handleStepClick}
-                    // activeColor='#1b1b1b'
+                    activeColor='#1b1b1b'
                     defaultColor='#1b1b1b'
                     activeBorderColor="#FF3D4880"
                     defaultBorderColor="#FF3D4880"

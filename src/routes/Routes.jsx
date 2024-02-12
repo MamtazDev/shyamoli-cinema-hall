@@ -14,6 +14,7 @@ import Steppers from "../Page/Steppers";
 import ContactUs from "../Page/ContactUs";
 import DownloadTicket from "../Page/DownloadTicket";
 import { PremiumTicket } from "../Page/PremiumTicket";
+import DemoStepper from "../Page/DemoStepper";
 
 
 const router = createBrowserRouter([
@@ -32,7 +33,7 @@ const router = createBrowserRouter([
 
             {
                 path: '/buyTickets',
-                element: <Steppers />
+                element: <DemoStepper />
             },
             {
                 path: '/gallary',

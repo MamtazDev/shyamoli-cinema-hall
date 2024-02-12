@@ -1,56 +1,56 @@
 const Seats = [
+    // {
+    //     id: 1,
+    //     seatNumber: "F1",
+    //     status: "available"
+    // },
+    // {
+    //     id: 2,
+    //     seatNumber: "F3",
+    //     status: "available"
+    // },
+    // {
+    //     id: 2,
+    //     seatNumber: "F2",
+    //     status: "available"
+    // },
+    // {
+    //     id: 2,
+    //     seatNumber: "F4",
+    //     status: "available"
+    // },
+    // {
+    //     id: 2,
+    //     seatNumber: "F5",
+    //     status: "available"
+    // },
+    // {
+    //     id: 2,
+    //     seatNumber: "F8",
+    //     status: "available"
+    // },
+    // {
+    //     id: 2,
+    //     seatNumber: "F6",
+    //     status: "available"
+    // },
+    // {
+    //     id: 2,
+    //     seatNumber: "F9",
+    //     status: "available"
+    // },
+    // {
+    //     id: 2,
+    //     seatNumber: "F7",
+    //     status: "available"
+    // },
+    // {
+    //     id: 2,
+    //     seatNumber: "F10",
+    //     status: "available"
+    // },
     {
         id: 1,
-        seatNumber: "F1",
-        status: "available"
-    },
-    {
-        id: 2,
-        seatNumber: "F3",
-        status: "available"
-    },
-    {
-        id: 2,
-        seatNumber: "F2",
-        status: "available"
-    },
-    {
-        id: 2,
-        seatNumber: "F4",
-        status: "available"
-    },
-    {
-        id: 2,
-        seatNumber: "F5",
-        status: "available"
-    },
-    {
-        id: 2,
-        seatNumber: "F8",
-        status: "available"
-    },
-    {
-        id: 2,
-        seatNumber: "F6",
-        status: "available"
-    },
-    {
-        id: 2,
-        seatNumber: "F9",
-        status: "available"
-    },
-    {
-        id: 2,
-        seatNumber: "F7",
-        status: "available"
-    },
-    {
-        id: 2,
-        seatNumber: "F10",
-        status: "available"
-    },
-    {
-        id: 2,
         seatNumber: "F11",
         status: "available"
     },
@@ -60,424 +60,422 @@ const Seats = [
         status: "available"
     },
     {
-        id: 2,
+        id: 3,
         seatNumber: "F12",
         status: "available"
     },
     {
-        id: 2,
+        id: 4,
         seatNumber: "F18",
         status: "available"
     },
     {
-        id: 2,
+        id: 5,
         seatNumber: "F13",
         status: "available"
     },
     {
-        id: 2,
+        id: 6,
         seatNumber: "F19",
         status: "available"
     },
     {
-        id: 2,
+        id:7,
         seatNumber: "F14",
         status: "available"
     },
     {
-        id: 2,
+        id:8,
         seatNumber: "F20",
         status: "available"
     },
     {
-        id: 2,
+        id: 9,
         seatNumber: "F15",
         status: "available"
     },
     {
-        id: 2,
+        id: 10,
         seatNumber: "F21",
         status: "available"
     },
     {
-        id: 2,
+        id: 11,
         seatNumber: "F16",
         status: "available"
     },
     {
-        id: 2,
+        id: 12,
         seatNumber: "F22",
         status: "available"
     },
     {
-        id: 2,
+        id: 13,
         seatNumber: "E1",
         status: "available"
     },
     {
-        id: 2,
+        id: 14,
         seatNumber: "F1",
         status: "available"
     },
     {
-        id: 2,
+        id:15,
         seatNumber: "E2",
         status: "available"
     },
     {
-        id: 2,
+        id: 16,
         seatNumber: "F2",
         status: "available"
     },
     {
-        id: 2,
+        id: 17,
         seatNumber: "E3",
         status: "available"
     },
     {
-        id: 2,
+        id: 18,
         seatNumber: "F3",
         status: "available"
     },
     {
-        id: 2,
+        id:19,
         seatNumber: "E4",
         status: "available"
     },
     {
-        id: 2,
+        id: 20,
         seatNumber: "F4",
         status: "available"
     },
     {
-        id: 2,
+        id: 21,
         seatNumber: "E5",
         status: "available"
     },
     {
-        id: 2,
+        id: 22,
         seatNumber: "F5",
         status: "available"
     },
     {
-        id: 2,
+        id: 23,
         seatNumber: "E6",
         status: "available"
     },
     {
-        id: 2,
+        id: 24,
         seatNumber: "F6",
         status: "available"
     },
     {
-        id: 2,
+        id: 25,
         seatNumber: "F7",
         status: "available"
     },
     {
-        id: 2,
+        id: 26,
         seatNumber: "F7",
         status: "available"
     },
     {
-        id: 2,
+        id: 27,
         seatNumber: "F8",
         status: "available"
     },
     {
-        id: 2,
+        id: 28,
         seatNumber: "F8",
         status: "available"
     },
     {
-        id: 2,
+        id: 29,
         seatNumber: "F9",
         status: "available"
     },
     {
-        id: 2,
+        id:30,
         seatNumber: "F9",
         status: "available"
     },
     {
-        id: 2,
+        id: 31,
         seatNumber: "F10",
         status: "available"
     },
     {
-        id: 2,
+        id: 32,
         seatNumber: "F10",
         status: "available"
     },
     {
-        id: 2,
+        id: 33,
         seatNumber: "F11",
         status: "available"
     },
     {
-        id: 2,
+        id: 34,
         seatNumber: "F11",
         status: "available"
     },
     {
-        id: 2,
+        id: 35,
         seatNumber: "F12",
         status: "available"
     },
     {
-        id: 2,
+        id:36,
         seatNumber: "F12",
         status: "available"
     },
     {
-        id: 2,
+        id: 37,
         seatNumber: "F13",
         status: "available"
     },
     {
-        id: 2,
+        id: 38,
         seatNumber: "F13",
         status: "available"
     },
     {
-        id: 2,
+        id: 39,
         seatNumber: "F14",
         status: "available"
     },
     {
-        id: 2,
+        id:40,
         seatNumber: "F14",
         status: "available"
     },
     {
-        id: 2,
+        id: 41,
         seatNumber: "F15",
         status: "available"
     },
     {
-        id: 2,
+        id: 42,
         seatNumber: "F15",
         status: "available"
     },
     {
-        id: 2,
+        id:43,
         seatNumber: "F16",
         status: "available"
     },
     {
-        id: 2,
+        id: 44,
         seatNumber: "F16",
         status: "available"
     },
     {
-        id: 2,
+        id:45,
         seatNumber: "F17",
         status: "available"
     },
     {
-        id: 2,
+        id: 46,
         seatNumber: "F17",
         status: "available"
     },
 
     {
-        id: 2,
+        id:47,
         seatNumber: "F18",
         status: "available"
     },
     {
-        id: 2,
+        id: 48,
         seatNumber: "F18",
         status: "available"
     },
     // 
     {
-        id: 2,
+        id: 49,
         seatNumber: "F1",
         status: "available"
     },
     {
-        id: 2,
+        id: 50,
         seatNumber: "F1",
         status: "available"
     },
 
     {
-        id: 2,
+        id: 51,
         seatNumber: "F2",
         status: "available"
     },
     {
-        id: 2,
+        id: 52,
         seatNumber: "F2",
         status: "available"
     },
 
     {
-        id: 2,
+        id: 53,
         seatNumber: "F3",
         status: "available"
     },
     {
-        id: 2,
+        id: 54,
         seatNumber: "F3",
         status: "available"
     },
 
     {
-        id: 2,
+        id: 55,
         seatNumber: "F4",
         status: "available"
     },
     {
-        id: 2,
+        id: 56,
         seatNumber: "F4",
         status: "available"
     },
 
     {
-        id: 2,
+        id: 57,
         seatNumber: "F5",
         status: "available"
     },
     {
-        id: 2,
+        id: 58,
         seatNumber: "F5",
         status: "available"
     },
     {
-        id: 2,
+        id: 59,
         seatNumber: "F6",
         status: "available"
     },
     {
-        id: 2,
+        id: 60,
         seatNumber: "F6",
         status: "available"
     },
     {
-        id: 2,
+        id: 61,
         seatNumber: "F7",
         status: "available"
     },
     {
-        id: 2,
+        id: 62,
         seatNumber: "F7",
         status: "available"
     },
     {
-        id: 2,
+        id: 63,
         seatNumber: "F8",
         status: "available"
     },
     {
-        id: 2,
+        id: 64,
         seatNumber: "F8",
         status: "available"
     },
     {
-        id: 2,
+        id: 65,
         seatNumber: "F9",
         status: "available"
     },
     {
-        id: 2,
+        id: 66,
         seatNumber: "F9",
         status: "available"
     },
     {
-        id: 2,
+        id: 67,
         seatNumber: "F10",
         status: "available"
     },
     {
-        id: 2,
+        id: 68,
         seatNumber: "F10",
         status: "available"
     },
     {
-        id: 2,
+        id: 69,
         seatNumber: "F11",
         status: "available"
     },
     {
-        id: 2,
+        id: 70,
         seatNumber: "F11",
         status: "available"
     },
     {
-        id: 2,
+        id: 71,
         seatNumber: "F12",
         status: "available"
     },
     {
-        id: 2,
+        id: 72,
         seatNumber: "F12",
         status: "available"
     },
     {
-        id: 2,
+        id: 73,
         seatNumber: "F13",
         status: "available"
     },
     {
-        id: 2,
+        id: 74,
         seatNumber: "F13",
         status: "available"
     },
     {
-        id: 2,
+        id: 75,
         seatNumber: "F14",
         status: "available"
     },
     {
-        id: 2,
+        id: 76,
         seatNumber: "F14",
         status: "available"
     },
     {
-        id: 2,
+        id:77,
         seatNumber: "F15",
         status: "available"
     },
     {
-        id: 2,
+        id: 78,
         seatNumber: "F15",
         status: "available"
     },
     {
-        id: 2,
+        id: 79,
         seatNumber: "F16",
         status: "available"
     },
     {
-        id: 2,
+        id: 80,
         seatNumber: "F16",
         status: "available"
     },
     {
-        id: 2,
+        id:81,
         seatNumber: "F17",
         status: "available"
     },
     {
-        id: 2,
+        id: 82,
         seatNumber: "F17",
         status: "available"
     },
 
     {
-        id: 2,
+        id: 83,
         seatNumber: "F18",
         status: "available"
     },
     {
-        id: 2,
+        id: 84,
         seatNumber: "F18",
         status: "available"
     },
-
-
 
 ]
 

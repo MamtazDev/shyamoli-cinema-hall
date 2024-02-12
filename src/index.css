@@ -178,8 +178,8 @@ upcomming_show .upcomming_show .swiper-button-prev {
     border-radius: 50%;
     /* padding: 12px; */
     width: 45px;
-     background-color: #141414;
-    
+    background-color: #141414;
+
 }
 
 .cast_slider .swiper-button-prev {
@@ -191,7 +191,7 @@ upcomming_show .upcomming_show .swiper-button-prev {
     justify-content: center;
     align-items: center;
     width: 45px;
-     background-color: #141414;
+    background-color: #141414;
 }
 
 .cast_slider .swiper {
@@ -224,18 +224,20 @@ upcomming_show .upcomming_show .swiper-button-prev {
 
 
 
-.stepper a:after{
+.stepper a:after {
     content: url('/src/assets/check.svg') !important;
 }
 
 .react-stepper-horizontal {
-    border-width: 11px; /* Set the desired height */
+    border-width: 11px;
+    /* Set the desired height */
 }
 
-input:checked ~ .checkmark {
+input:checked~.checkmark {
     background-color: red !important;
-  }
-  .container1 {
+}
+
+.container1 {
     display: flex;
     position: relative;
     padding-left: 35px;
@@ -246,19 +248,19 @@ input:checked ~ .checkmark {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  }
-  
-  /* Hide the browser's default checkbox */
-  .container1 input {
+}
+
+/* Hide the browser's default checkbox */
+.container1 input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
     height: 0;
     width: 0;
-  }
-  
-  /* Create a custom checkbox */
-  .checkmark {
+}
+
+/* Create a custom checkbox */
+.checkmark {
     position: absolute;
     top: 0;
     left: 0;
@@ -268,32 +270,32 @@ input:checked ~ .checkmark {
     border: 1px solid #FF3D48;
     background: var(--Black-06, #0F0F0F);
     margin-top: 10px;
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .container1:hover input ~ .checkmark {
+}
+
+/* On mouse-over, add a grey background color */
+.container1:hover input~.checkmark {
     background-color: #000;
-  }
-  
-  /* When the checkbox is checked, add a blue background */
-  .container1 input:checked ~ .checkmark {
+}
+
+/* When the checkbox is checked, add a blue background */
+.container1 input:checked~.checkmark {
     background-color: red;
-  }
-  
-  /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
     content: "";
     position: absolute;
     display: none;
-  }
-  
-  /* Show the checkmark when checked */
-  .container1 input:checked ~ .checkmark:after {
-    display: block;
-  }
+}
 
-  /* Style the checkmark/indicator */
-  .container1 .checkmark:after {
+/* Show the checkmark when checked */
+.container1 input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container1 .checkmark:after {
     left: 11px;
     top: 8px;
     width: 5px;
@@ -303,4 +305,53 @@ input:checked ~ .checkmark {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-  }
+}
+
+.step-item {
+    @apply relative flex flex-col items-center justify-center w-36;
+}
+
+.step-item:not(:first-child):before {
+    @apply content-[''] bg-[#7F7F7F] absolute w-[79%] h-[11px] top-[33.333333%] -translate-y-2/4 right-[63%];
+
+}
+
+.step {
+    @apply relative z-10 flex items-center justify-center w-[43px] h-[43px] font-semibold text-[#1b1b1b] rounded-full ;
+}
+
+.step {
+    /* @apply bg-[#1b1b1b]; */
+    background-color: none !important;
+}
+
+.active {
+    /* @apply bg-red-500; */
+    position: relative;
+}
+.complete:not(:first-child):before, .active:not(:first-child):before {
+    background-color: #FF3D48 !important;
+    border: none !important;
+}
+.step-item .complete:not(.active) .step {
+    border: 3px solid #FF3D48 !important;
+}
+
+.active::after {
+    content: '';
+    background-image: url('/src/assets/check.svg') !important;
+    width: 100px;
+}
+
+/* .complete .step {
+    @apply bg-green-600;
+  } */
+.complete p {
+    @apply text-white;
+}
+
+.complete:not(:first-child):before,
+.active:not(:first-child):before {
+    @apply bg-[#FFFFFF80];
+    border: none !important;
+}
