@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import seatRound from '../../../assets/seatRound.png'
 import timer from '../../../assets/timer.svg'
 import { SeatsArrangeMent } from './SeatsArrangeMent'
+import StepperButtons from '../StepperButtons'
 
-const AvailableSeats = ({onNext}) => {
+const AvailableSeats = ({ complete, handleNext }) => {
     const [select, setSelect] = useState(false)
 
     return (
@@ -40,10 +41,15 @@ const AvailableSeats = ({onNext}) => {
                     <SeatsArrangeMent />
                 </div>
 
-
+                {/* 
                 <div className="flex flex-col items-center gap-[12px] justify-center mt-[32px] pb-[80px] ">
                     <button onClick={onNext} className='max-w-[462px] w-full bg-[#FF3D48] rounded-[8px] shadow-button py-[16px] font-semibold text-white text-base'>Pay 600 tk</button>
-                </div>
+                </div> */}
+                {!complete && (
+                    <StepperButtons onNext={handleNext}>
+                       Pay 600 tk
+                    </StepperButtons>
+                )}
 
             </div>
         </div>

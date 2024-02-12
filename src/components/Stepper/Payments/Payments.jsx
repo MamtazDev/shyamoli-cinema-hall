@@ -7,9 +7,10 @@ import m3 from '../../../assets/m3.svg'
 import bkash from '../../../assets/bkash.png'
 import nogod from '../../../assets/nogod.jpg'
 import upay from '../../../assets/upay.png'
+import StepperButtons from '../StepperButtons'
 
 
-const Payments = ({onNext}) => {
+const Payments = ({  complete, handleNext }) => {
 
     const [select, setSelect] = useState(false)
     return (
@@ -44,9 +45,14 @@ const Payments = ({onNext}) => {
                             <img src={upay} alt="" />
                         </div>
                     </div>
-                    <div className="flex flex-col items-center gap-[12px] justify-center mt-[32px]  ">
-                    <button onClick={onNext} className='max-w-[462px] w-full bg-[#FF3D48] rounded-[8px] shadow-button py-[16px] font-semibold text-white text-base'>Pay 500 tk</button>
-                </div>
+                    {/* <div className="flex flex-col items-center gap-[12px] justify-center mt-[32px]  ">
+                        <button onClick={onNext} className='max-w-[462px] w-full bg-[#FF3D48] rounded-[8px] shadow-button py-[16px] font-semibold text-white text-base'>Pay 500 tk</button>
+                    </div> */}
+                     {!complete && (
+                    <StepperButtons onNext={handleNext}>
+                      Pay 500 tk
+                    </StepperButtons>
+                )}
 
                 </div>
 

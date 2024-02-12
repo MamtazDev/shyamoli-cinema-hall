@@ -6,8 +6,9 @@ import i3 from '../../../assets/i4.png'
 import i4 from '../../../assets/i6.png'
 import i5 from '../../../assets/i5.png'
 import amount from '../../../assets/amount.svg'
+import StepperButtons from '../StepperButtons'
 
-const TicketSummary = ({onNext}) => {
+const TicketSummary = ({  complete, handleNext }) => {
     return (
 
         <>
@@ -177,11 +178,15 @@ const TicketSummary = ({onNext}) => {
                             </div>
                             <p className='text-[#F8FAFC] text-sm font-medium leading-[20px]'>600 tk</p>
                         </div>
-
+                        {/* 
                         <div className="flex flex-col items-center gap-[12px] justify-center mt-[32px] ">
                             <button onClick={onNext} className='max-w-[462px] w-full bg-[#FF3D48] rounded-[8px] shadow-button py-[16px] font-semibold text-white text-base'>Next</button>
-                        </div>
-
+                        </div> */}
+                        {!complete && (
+                            <StepperButtons onNext={handleNext}>
+                               Next
+                            </StepperButtons>
+                        )}
                     </div>
                 </div>
             </div>

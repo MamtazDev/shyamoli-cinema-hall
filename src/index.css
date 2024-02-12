@@ -307,6 +307,25 @@ input:checked~.checkmark {
     transform: rotate(45deg);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* stepper */
 .step-item {
     @apply relative flex flex-col items-center justify-center w-36;
 }
@@ -317,7 +336,7 @@ input:checked~.checkmark {
 }
 
 .step {
-    @apply relative z-10 flex items-center justify-center w-[43px] h-[43px] font-semibold text-[#1b1b1b] rounded-full ;
+    @apply relative z-10 flex items-center justify-center w-[43px] h-[43px] font-semibold text-[#1b1b1b] rounded-full;
 }
 
 .step {
@@ -329,10 +348,13 @@ input:checked~.checkmark {
     /* @apply bg-red-500; */
     position: relative;
 }
-.complete:not(:first-child):before, .active:not(:first-child):before {
+
+.complete:not(:first-child):before,
+.active:not(:first-child):before {
     background-color: #FF3D48 !important;
     border: none !important;
 }
+
 .step-item .complete:not(.active) .step {
     border: 3px solid #FF3D48 !important;
 }

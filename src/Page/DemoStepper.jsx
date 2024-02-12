@@ -10,21 +10,21 @@ import Confirmation from "../components/Stepper/Confirmation/Confirmation";
 
 
 const DemoStepper = () => {
-    const steps = [
-        { label: "Select Movie", component: <SelectMovie /> },
-        { label: "Buy Tickets", component: <BuyTickets /> },
-        { label: "Available Seats", component: <AvailableSeats /> },
-        { label: "Details", component: <Details /> },
-        { label: "Ticket Summary", component: <TicketSummary /> },
-        { label: "Payments", component: <Payments /> },
-        { label: "Confirmation", component: <Confirmation /> },
-    ];
 
     const [currentStep, setCurrentStep] = useState(1);
     const [complete, setComplete] = useState(false);
     const handleNext = () => {
         currentStep === steps.length ? setComplete(true) : setCurrentStep((prev) => prev + 1);
     };
+    const steps = [
+        { label: "Select Movie", component: <SelectMovie complete={complete} handleNext={handleNext} currentStep={currentStep} /> },
+        { label: "Buy Tickets", component: <BuyTickets complete={complete} handleNext={handleNext} currentStep={currentStep} /> },
+        { label: "Available Seats", component: <AvailableSeats complete={complete} handleNext={handleNext} currentStep={currentStep} /> },
+        { label: "Details", component: <Details complete={complete} handleNext={handleNext} currentStep={currentStep} /> },
+        { label: "Ticket Summary", component: <TicketSummary complete={complete} handleNext={handleNext} currentStep={currentStep} /> },
+        { label: "Payments", component: <Payments complete={complete} handleNext={handleNext} currentStep={currentStep} /> },
+        { label: "Confirmation", component: <Confirmation complete={complete} handleNext={handleNext} currentStep={currentStep} /> },
+    ];
 
     return (
         <>
@@ -44,15 +44,13 @@ const DemoStepper = () => {
                         ))}
                     </div>
                     <div>{steps[currentStep - 1].component}</div>
-                    {!complete && (
+                    {/* {!complete && (
                         <button className="btn" onClick={handleNext}>
                             {currentStep === steps.length ? "Finish" : "Next"}
                         </button>
-                    )}
+                    )} */}
                 </div>
             </div>
-
-
         </>
     );
 };

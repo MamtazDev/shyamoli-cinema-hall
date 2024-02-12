@@ -4,8 +4,11 @@ import show from '../../assets/selectMovie.png';
 import DateSelect from './DateSelect';
 import './SelectMovie.css';
 import AvailAbleMovieTime from './AvailAbleMovieTime';
+import { Stepper } from '@material-tailwind/react';
+import StepperButtons from './StepperButtons';
 
-const SelectMovie = ({ onNext }) => {
+const SelectMovie = ({  complete, currentStep, handleNext }) => {
+    console.log(complete)
     return (
         <>
             <div className='mt-[32px]'>
@@ -35,11 +38,20 @@ const SelectMovie = ({ onNext }) => {
                     </>
 
                 ))}
-
+                {/* 
                 <div className="flex flex-col items-center gap-[12px] justify-center pb-[80px]">
                     <button onClick={onNext} className='max-w-[462px] w-full bg-[#FF3D48] rounded-[8px] shadow-button py-[16px] font-semibold text-white text-base   '>Purchase Now</button>
                     <p className='text-sm font-normal '>You’ve Selected <span>2</span> Movies</p>
-                </div>
+                </div> */}
+                    {/* // <button className="btn" onClick={handleNext}>
+                    //     {currentStep === steps.length ? "Finish" : "Next"}
+                    // </button> */}
+                {!complete && (
+                   <StepperButtons onNext={handleNext}>
+                    Purchase Now
+                   </StepperButtons>
+                )}
+                  <p className='text-sm font-normal '>You’ve Selected <span>2</span> Movies</p>
             </div>
 
 

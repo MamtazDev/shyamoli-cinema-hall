@@ -1,17 +1,18 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
 import success from '../../../assets/success.png'
+import StepperButtons from '../StepperButtons'
 
-const Confirmation = ({ onNext }) => {
+const Confirmation = ({ complete, currentStep, handleNext }) => {
     return (
         <div>
             <div className='mt-[32px] '>
                 <h2 className='text-primary text-[30px] font-bold leading-[30px] mb-[36px] '>Confirmation</h2>
                 <div className='p-[24px] bg-[#1A1A1A]  border border-[#262626] rounded-[12px]'>
                     <div className='max-w-[463px] mx-auto w-full rounded-[20px] bg-[#25282e] pt-[80px] px-[27px] pb-[53px] relative'>
-                       <div className='absolute top-[-59px] left-[35%]'>
-                       <img src={success} alt="" />
-                       </div>
+                        <div className='absolute top-[-59px] left-[35%]'>
+                            <img src={success} alt="" />
+                        </div>
 
                         <h2 className='text-[30px] font-bold leading-[36px] text-center '>Congratulations</h2>
                         <p className='text-lg font-normal leading-[28px] text-center text-[#FFFFFFB7] mt-[9px]'>You’ve successfully purchase tickets</p>
@@ -45,9 +46,9 @@ const Confirmation = ({ onNext }) => {
                     </div>
 
                     <div className="flex flex-col items-center gap-[12px] justify-center mt-[32px]  ">
-                        <button onClick={onNext} className='max-w-[462px] w-full bg-[#FF3D48] rounded-[8px] shadow-button py-[16px] font-semibold text-white text-base'>Download Ticket</button>
+                        <button  className='max-w-[462px] w-full bg-[#FF3D48] rounded-[8px] shadow-button py-[16px] font-semibold text-white text-base'>Download Ticket</button>
                     </div>
-
+           
                 </div>
 
             </div>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
+import StepperButtons from '../StepperButtons'
 
-const Details = ({ onNext }) => {
+const Details = ({ complete, handleNext }) => {
     const [phoneVerify, setPhoneVerify] = useState(false)
     const [sendOtp, setSendOtp] = useState(false)
 
@@ -41,10 +42,14 @@ const Details = ({ onNext }) => {
                         </div>}
 
                     </div>
-                    <div className="flex flex-col items-center gap-[12px] justify-center mt-[32px]  ">
+                    {/* <div className="flex flex-col items-center gap-[12px] justify-center mt-[32px]  ">
                         <button onClick={onNext} className='max-w-[462px] w-full bg-[#FF3D48] rounded-[8px] shadow-button py-[16px] font-semibold text-white text-base'>Next</button>
-                    </div>
-                </div>
+                    </div> */}
+                    {!complete && (
+                        <StepperButtons onNext={handleNext}>
+                           Next
+                        </StepperButtons>
+                    )}                </div>
             </div>
 
 

@@ -3,8 +3,9 @@
 import './Tickets.css';
 import TicketType from './TicketType';
 import TicketQuantity from './TicketQuantity';
+import StepperButtons from '../StepperButtons';
 
-const BuyTickets = ({ onNext }) => {
+const BuyTickets = ({ complete, currentStep, handleNext }) => {
 
     return (
         <div>
@@ -20,9 +21,11 @@ const BuyTickets = ({ onNext }) => {
                 </div>
                 {/* ticket quantity */}
                 <TicketQuantity />
-                <div className="flex flex-col items-center gap-[12px] justify-center mt-[32px] pb-[80px] ">
-                    <button onClick={onNext} className='max-w-[462px] w-full bg-[#FF3D48] rounded-[8px] shadow-button py-[16px] font-semibold text-white text-base'>Next</button>
-                </div>
+                {!complete && (
+                    <StepperButtons onNext={handleNext}>
+                        Next
+                    </StepperButtons>
+                )}
             </div>
         </div>
     )
