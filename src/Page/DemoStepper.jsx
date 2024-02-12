@@ -7,7 +7,7 @@ import Details from "../components/Stepper/Details/Details";
 import TicketSummary from "../components/Stepper/TicketSummary/TicketSummary";
 import Payments from "../components/Stepper/Payments/Payments";
 import Confirmation from "../components/Stepper/Confirmation/Confirmation";
-
+import back from '../assets/back.svg';
 
 const DemoStepper = () => {
 
@@ -16,6 +16,11 @@ const DemoStepper = () => {
     const handleNext = () => {
         currentStep === steps.length ? setComplete(true) : setCurrentStep((prev) => prev + 1);
     };
+
+    const handleBack = () => {
+        setCurrentStep((prev) => prev - 1);
+    };
+
     const steps = [
         { label: "Select Movie", component: <SelectMovie complete={complete} handleNext={handleNext} currentStep={currentStep} /> },
         { label: "Buy Tickets", component: <BuyTickets complete={complete} handleNext={handleNext} currentStep={currentStep} /> },
@@ -29,8 +34,9 @@ const DemoStepper = () => {
     return (
         <>
             <div className='bg-[#141414] pt-[160px] text-white'>
-                <div className='max-w-[1047px] w-full mx-auto '>
-                    <div className="flex justify-between">
+                <div className='max-w-[1280px] w-full mx-auto '>
+
+                    <div className="flex justify-between max-w-[1047px] mx-auto">
                         {steps?.map((step, i) => (
                             <div
                                 key={i}
@@ -43,12 +49,12 @@ const DemoStepper = () => {
                             </div>
                         ))}
                     </div>
+                    {currentStep !== 1 && (
+                        <button className="text-lg border-0 btn mt-[36px]" onClick={handleBack}><img src={back} alt="back" />Back</button>
+                    )}
+                    
                     <div>{steps[currentStep - 1].component}</div>
-                    {/* {!complete && (
-                        <button className="btn" onClick={handleNext}>
-                            {currentStep === steps.length ? "Finish" : "Next"}
-                        </button>
-                    )} */}
+
                 </div>
             </div>
         </>
@@ -56,4 +62,3 @@ const DemoStepper = () => {
 };
 
 export default DemoStepper;
-

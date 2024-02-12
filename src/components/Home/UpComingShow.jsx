@@ -11,12 +11,28 @@ import UpComingShowCards from './UpComingShowCards';
 
 const UpComingShow = () => {
     return (
-        <div className='bg-black upcomming_show'>
+        <div className='relative bg-black upcomming_show'>
 
             <div className='max-w-[1280px] w-full mx-auto'>
                 <h1 className='text-primary text-[36px] font-bold text-center'>Upcoming Shows</h1>
 
+                <div className='bg-[#0F0F0F] h-[56px] w-[134px] absolute right-[376px] top-[69px] '>
+                    {/* .w-\[106px\] {
+    width: 134px 
+px
+;
+}
 
+<style>
+.h-\[56px\] {
+    height: 56px;
+}
+<style>
+.right-0 {
+    right: 376px;
+    top: 69px;
+} */}
+                </div>
                 <Swiper
                     spaceBetween={30}
 
@@ -27,19 +43,15 @@ const UpComingShow = () => {
                     modules={[Pagination, Navigation, HashNavigation]}
                     className="mySwiper text-white h-[800px]"
                 >
-                    <SwiperSlide data-hash="slide1">
+                    <SwiperSlide data-hash="slide1" className='pt-[100px]'>
 
                         <UpComingShowCards />
                     </SwiperSlide>
-                    <SwiperSlide data-hash="slide1">
+                    <SwiperSlide data-hash="slide1" className='pt-[100px]'>
 
                         <UpComingShowCards />
                     </SwiperSlide>
-                    <SwiperSlide data-hash="slide1">
-
-                        <UpComingShowCards />
-                    </SwiperSlide>
-                    <SwiperSlide data-hash="slide1">
+                    <SwiperSlide data-hash="slide1" className='pt-[100px]'>
 
                         <UpComingShowCards />
                     </SwiperSlide>

@@ -46,9 +46,9 @@ const Confirmation = ({ complete, currentStep, handleNext }) => {
                     </div>
 
                     <div className="flex flex-col items-center gap-[12px] justify-center mt-[32px]  ">
-                        <button  className='max-w-[462px] w-full bg-[#FF3D48] rounded-[8px] shadow-button py-[16px] font-semibold text-white text-base'>Download Ticket</button>
+                        <button className='max-w-[462px] w-full bg-[#FF3D48] rounded-[8px] shadow-button py-[16px] font-semibold text-white text-base'>Download Ticket</button>
                     </div>
-           
+
                 </div>
 
             </div>

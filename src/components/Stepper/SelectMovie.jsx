@@ -4,17 +4,16 @@ import show from '../../assets/selectMovie.png';
 import DateSelect from './DateSelect';
 import './SelectMovie.css';
 import AvailAbleMovieTime from './AvailAbleMovieTime';
-import { Stepper } from '@material-tailwind/react';
 import StepperButtons from './StepperButtons';
 
-const SelectMovie = ({  complete, currentStep, handleNext }) => {
+const SelectMovie = ({ complete, handleNext }) => {
     console.log(complete)
     return (
         <>
             <div className='mt-[32px]'>
                 <h2 className='text-primary text-[30px] font-bold leading-[30px] mb-[36px] '> Select Movie</h2>
 
-                {[1].map((data) => (
+                {[1,2,3,4].map((data) => (
                     <>
                         <div className="grid grid-cols-12 gap-[32px]">
                             <div className="col-span-12 lg:col-span-3">
@@ -38,20 +37,12 @@ const SelectMovie = ({  complete, currentStep, handleNext }) => {
                     </>
 
                 ))}
-                {/* 
-                <div className="flex flex-col items-center gap-[12px] justify-center pb-[80px]">
-                    <button onClick={onNext} className='max-w-[462px] w-full bg-[#FF3D48] rounded-[8px] shadow-button py-[16px] font-semibold text-white text-base   '>Purchase Now</button>
-                    <p className='text-sm font-normal '>You’ve Selected <span>2</span> Movies</p>
-                </div> */}
-                    {/* // <button className="btn" onClick={handleNext}>
-                    //     {currentStep === steps.length ? "Finish" : "Next"}
-                    // </button> */}
                 {!complete && (
-                   <StepperButtons onNext={handleNext}>
-                    Purchase Now
-                   </StepperButtons>
+                    <StepperButtons onNext={handleNext}>
+                        Purchase Now
+                    </StepperButtons>
                 )}
-                  <p className='text-sm font-normal '>You’ve Selected <span>2</span> Movies</p>
+                <p className='text-sm font-normal '>You’ve Selected <span>2</span> Movies</p>
             </div>
 
 
