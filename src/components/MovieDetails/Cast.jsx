@@ -23,12 +23,91 @@ const Cast = () => {
         navigation={true}
         modules={[Pagination, Navigation,Autoplay]}
         className="mySwiper"
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
+        // autoplay={{
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // }}
+        breakpoints={{
+          425: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView:3,
+            spaceBetween: 40,
+          },
+          1920: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
         }}
       >
         <SwiperSlide>
+          <div className=''>
+            <img src={cast1} alt="cast" />
+
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className=''>
+            <img src={cast2} alt="cast" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className=''>
+            <img src={cast3} alt="cast" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className=''>
+            <img src={cast4} alt="cast" />
+
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className=''>
+            <img src={cast5} alt="cast" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className=''>
+            <img src={cast1} alt="cast" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className=''>
+            <img src={cast2} alt="cast" />
+
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className=''>
+            <img src={cast3} alt="cast" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className=''>
+            <img src={cast4} alt="cast" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className=''>
+            <img src={cast5} alt="cast" />
+
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className=''>
+            <img src={cast1} alt="cast" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className=''>
+            <img src={cast2} alt="cast" />
+          </div>
+        </SwiperSlide>
+
+        {/* <SwiperSlide>
           <div className='flex gap-[24px]'>
             <img src={cast1} alt="cast" />
             <img src={cast2} alt="cast" />
@@ -46,17 +125,7 @@ const Cast = () => {
             <img src={cast4} alt="cast" />
             <img src={cast5} alt="cast" />
           </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className='flex gap-[24px]'>
-            <img src={cast1} alt="cast" />
-            <img src={cast2} alt="cast" />
-            <img src={cast3} alt="cast" />
-            <img src={cast4} alt="cast" />
-            <img src={cast5} alt="cast" />
-          </div>
-        </SwiperSlide>
+        </SwiperSlide> */}
 
       </Swiper>
 

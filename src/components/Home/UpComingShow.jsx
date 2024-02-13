@@ -23,10 +23,10 @@ const UpComingShow = () => {
                     spaceBetween={30}
                     navigation={true}
                     modules={[Pagination, Navigation, HashNavigation, Autoplay]}
-                    // autoplay={{
-                    //     delay: 2500,
-                    //     disableOnInteraction: false,
-                    // }}
+                    autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    }}
                     breakpoints={{
                         640: {
                           slidesPerView: 1,
@@ -41,7 +41,7 @@ const UpComingShow = () => {
                           spaceBetween: 50,
                         },
                       }}
-                    className="mySwiper text-white h-[700px] lg:h-[800px]"
+                    className="mySwiper text-white h-[800px]"
                 >
                     <div className="grid grid-cols-12">
                         <SwiperSlide data-hash="slide1" className='lg:pt-[100px] pt-[24px]'>

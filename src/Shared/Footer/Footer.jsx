@@ -18,11 +18,8 @@ export const Footer = () => {
                         </div>
                         <div className='text-start lg:pt-0  pt-[30px]'>
                             <p className='text-sm font-semibold mb-[16px]'>Stay up to date</p>
-
                             <div className="flex lg:flex-row items-start gap-[16px]">
-                              
                                 <input type="email" className='bg-white h-[40px] px-[14px] shadow-input rounded-[8px] border border-[#D0D5DD] ' placeholder="Enter your email" name="" id="" />
-
                                 <button className='text-white max-w-[200px] text-sm   px-[16px]  w-full bg-[#FF3D48] border border-[#FF3D48] shadow-button lg:py-[12px] py-[10px] rounded-[8px] '>Subscribe</button>
                             </div>
                         </div>
@@ -36,10 +33,8 @@ export const Footer = () => {
                             <Link to="#"> <li>About Us</li></Link>
                         </ul>
                     </div>
-
                 </div>
             </div>
-
         </>
     )
 }
