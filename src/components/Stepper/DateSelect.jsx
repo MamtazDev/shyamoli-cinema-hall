@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Pagination, Navigation } from 'swiper/modules';
+import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 
 const DateSelect = () => {
 
@@ -19,7 +19,6 @@ const DateSelect = () => {
                 navigation={true}
                 modules={[Pagination, Navigation]}
                 className="mySwiper"
-                autoplay={true}
             >
                 {[1, 2, 3, 4, 5, 6].map((data) => (
                     <>

@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 
 
 // import required modules
-import { Pagination } from 'swiper/modules';
+import { Pagination,Autoplay } from 'swiper/modules';
 import WatchTrailerModal from './WatchTrailerModal';
 
 const Banner = () => {
@@ -20,7 +20,11 @@ const Banner = () => {
                     pagination={{
                         dynamicBullets: true,
                     }}
-                    modules={[Pagination]}
+                    autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                      }}
+                    modules={[Pagination,Autoplay]}
                     className="mySwiper bg-red lg:h-[849px] h-[574px] absolute top-0"
                 >
                     {[0, 1, 2, 3, 4, 5].map(data => (

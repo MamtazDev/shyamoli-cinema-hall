@@ -3,7 +3,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import { Pagination, Navigation } from 'swiper/modules';
+import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 import UpComingShowCards from '../Home/UpComingShowCards';
 const MovieShowSlider = () => {
 
@@ -17,8 +17,12 @@ const MovieShowSlider = () => {
 
                     <Swiper
                         navigation={true}
-                        modules={[Pagination, Navigation]}
+                        modules={[Pagination, Navigation, Autoplay]}
                         className="mySwiper "
+                        autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        }}
                     >
                         <SwiperSlide>
                             <UpComingShowCards />

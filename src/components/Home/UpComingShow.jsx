@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 // import required modules
-import { Pagination, Navigation, HashNavigation } from 'swiper/modules';
+import { Pagination, Navigation, HashNavigation,Autoplay } from 'swiper/modules';
 import UpComingShowCards from './UpComingShowCards';
 
 const UpComingShow = () => {
@@ -24,7 +24,7 @@ const UpComingShow = () => {
                     //     clickable: true,
                     // }}
                     navigation={true}
-                    modules={[Pagination, Navigation, HashNavigation]}
+                    modules={[Pagination, Navigation, HashNavigation,Autoplay]}
                     className="mySwiper text-white h-[800px]"
                 >
                     <SwiperSlide data-hash="slide1" className='pt-[100px]'>

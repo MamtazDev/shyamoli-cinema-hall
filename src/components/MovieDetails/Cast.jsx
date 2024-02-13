@@ -10,7 +10,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import { Pagination, Navigation } from 'swiper/modules';
+import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 
 const Cast = () => {
   return (
@@ -21,8 +21,12 @@ const Cast = () => {
       </div>
       <Swiper
         navigation={true}
-        modules={[Pagination, Navigation]}
+        modules={[Pagination, Navigation,Autoplay]}
         className="mySwiper"
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
       >
         <SwiperSlide>
           <div className='flex gap-[24px]'>
