@@ -1,20 +1,27 @@
 import React from 'react'
 import Seats from '../../../utils/seats'
+
 export const SeatsArrangeMent = () => {
 
   const evenIdSeats = [];
   const oddIdSeats = [];
-
-  Seats.forEach(seat => {
+  for (let i = 10; i < Seats.length; i++) {
+    const seat = Seats[i];
     if (seat.id % 2 === 0) {
       evenIdSeats.push(seat);
     } else {
       oddIdSeats.push(seat);
     }
-  });
-  console.log(evenIdSeats)
-  console.log(oddIdSeats)
-  // export { evenIdSeats, oddIdSeats };
+  }
+
+  console.log("Even ID Seats:", evenIdSeats);
+  console.log("Odd ID Seats:", oddIdSeats);
+
+  const firstTwoEven = Seats.filter((seat) => seat.id % 2 === 0).slice(0, 2);
+  const firstTwoOdd = Seats.filter((seat) => seat.id % 2 !== 0).slice(0, 2);
+  const firstThreeEven = Seats.filter((seat) => seat.id % 2 === 0).slice(2, 5);
+  const firstThreeOdd = Seats.filter((seat) => seat.id % 2 !== 0).slice(2, 5);
+
 
   return (
     <div className='max-w-[927px] mx-auto'>
@@ -22,23 +29,21 @@ export const SeatsArrangeMent = () => {
         <div className="col-span-6">
 
           <div className='flex gap-[12px]'>
-            <div className='w-[66px] h-[48px] bg-[#3D3D3D] rounded-[4px] opacity-[0.6] flex justify-center items-center text-[20px] font-medium'>
-              F1
-            </div>
-            <div className='w-[66px] h-[48px] bg-[#3D3D3D] rounded-[4px] opacity-[0.6] flex justify-center items-center text-[20px] font-medium  '>
-              F2
-            </div>
+            {firstTwoOdd.map((data) => (<>
+              <div className='w-[66px] h-[48px] bg-[#3D3D3D] rounded-[4px] opacity-[0.6] flex justify-center items-center text-[20px] font-medium  '>
+                {data.seatNumber}
+              </div>
+            </>))
+            }
           </div>
           <div className='flex gap-[12px] mt-[12px]'>
-            <div className='w-[66px] h-[48px] bg-[#3D3D3D] rounded-[4px] opacity-[0.6] flex justify-center items-center text-[20px] font-medium'>
-              F5
-            </div>
-            <div className='w-[66px] h-[48px] bg-[#3D3D3D] rounded-[4px] opacity-[0.6] flex justify-center items-center text-[20px] font-medium  '>
-              F6
-            </div>
-            <div className='w-[66px] h-[48px] bg-[#3D3D3D] rounded-[4px] opacity-[0.6] flex justify-center items-center text-[20px] font-medium  '>
-              F7
-            </div>
+            {firstThreeOdd.map(data => (
+              <>
+                <div className='w-[66px] h-[48px] bg-[#3D3D3D] rounded-[4px] opacity-[0.6] flex justify-center items-center text-[20px] font-medium'>
+                  {data.seatNumber}
+                </div>
+              </>
+            ))}
           </div>
           <div className="flex justify-start">
             <div className='grid grid-cols-12 gap-[12px] mt-[12px]'>
@@ -58,30 +63,28 @@ export const SeatsArrangeMent = () => {
         {/* right side seats */}
         <div className="col-span-6">
           <div className='flex gap-[12px] justify-end'>
-            <div className='w-[66px] h-[48px] bg-[#3D3D3D] rounded-[4px] opacity-[0.6] flex justify-center items-center text-[20px] font-medium'>
-              F1
-            </div>
-            <div className='w-[66px] h-[48px] bg-[#3D3D3D] rounded-[4px] opacity-[0.6] flex justify-center items-center text-[20px] font-medium  '>
-              F2
-            </div>
+            {firstTwoEven.map((data) => (<>
+              <div className='w-[66px] h-[48px] bg-[#3D3D3D] rounded-[4px] opacity-[0.6] flex justify-center items-center text-[20px] font-medium  '>
+                {data.seatNumber}
+              </div>
+            </>))
+            }
           </div>
           <div className='flex gap-[12px] mt-[12px] justify-end '>
-            <div className='w-[66px] h-[48px] bg-[#3D3D3D] rounded-[4px] opacity-[0.6] flex justify-center items-center text-[20px] font-medium'>
-              F5
-            </div>
-            <div className='w-[66px] h-[48px] bg-[#3D3D3D] rounded-[4px] opacity-[0.6] flex justify-center items-center text-[20px] font-medium  '>
-              F6
-            </div>
-            <div className='w-[66px] h-[48px] bg-[#3D3D3D] rounded-[4px] opacity-[0.6] flex justify-center items-center text-[20px] font-medium  '>
-              F7
-            </div>
+            {firstThreeEven.map(data => (
+              <>
+                <div className='w-[66px] h-[48px] bg-[#3D3D3D] rounded-[4px] opacity-[0.6] flex justify-center items-center text-[20px] font-medium'>
+                  {data.seatNumber}
+                </div>
+              </>
+            ))}
           </div>
           <div className="flex justify-end">
             <div className='grid grid-cols-12 gap-[12px] mt-[12px] '>
               {
                 oddIdSeats.map((data) => (
                   <>
-                    <div className='col-span-2 w-[66px] h-[48px] bg-[#3D3D3D] rounded-[4px] opacity-[0.6] flex justify-center items-center text-[20px] font-medium'>
+                    <div className={`col-span-2 w-[66px] h-[48px] bg-[#3D3D3D] rounded-[4px] opacity-[0.6] flex justify-center items-center text-[20px] font-medium`}>
                       {data.seatNumber}
                     </div>
                   </>
@@ -89,8 +92,6 @@ export const SeatsArrangeMent = () => {
               }
             </div>
           </div>
-
-          {/* seats-common */}
 
         </div>
       </div>

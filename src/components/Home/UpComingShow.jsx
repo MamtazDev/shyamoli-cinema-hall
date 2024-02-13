@@ -16,29 +16,13 @@ const UpComingShow = () => {
             <div className='max-w-[1280px] w-full mx-auto'>
                 <h1 className='text-primary text-[36px] font-bold text-center'>Upcoming Shows</h1>
 
-                <div className='bg-[#0F0F0F] h-[56px] w-[134px] absolute right-[376px] top-[69px] '>
-                    {/* .w-\[106px\] {
-    width: 134px 
-px
-;
-}
-
-<style>
-.h-\[56px\] {
-    height: 56px;
-}
-<style>
-.right-0 {
-    right: 376px;
-    top: 69px;
-} */}
-                </div>
+                {/* <div className='bg-[#0F0F0F] h-[56px] w-[134px] absolute right-[376px] top-[69px] lg:block hidden '></div> */}
                 <Swiper
                     spaceBetween={30}
 
-                    pagination={{
-                        clickable: true,
-                    }}
+                    // pagination={{
+                    //     clickable: true,
+                    // }}
                     navigation={true}
                     modules={[Pagination, Navigation, HashNavigation]}
                     className="mySwiper text-white h-[800px]"

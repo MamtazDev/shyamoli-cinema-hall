@@ -3,6 +3,7 @@ import show3 from '../../assets/movied1.png';
 import MovieDetailsCard from './MovieDetailsCard';
 import MovieShowSlider from './MovieShowSlider';
 import './MovieDetails.css'
+import { Link } from 'react-router-dom';
 
 const MovieDetails = () => {
     return (
@@ -15,12 +16,13 @@ const MovieDetails = () => {
                         <div className="col-span-12 lg:col-span-4">
                             <div className='p-[24px] bg-[#1A1A1A]'>
                                 <img className='mb-[24px] w-full' src={show3} alt="" />
-                                <button className='bg-primary py-[16px]  w-full rounded-[8px] shadow-button  text-white text-lg font-semibold '>Get Tickets</button>
+                                <Link to="/buyTickets">
+                                    <button className='bg-primary py-[16px]  w-full rounded-[8px] shadow-button  text-white text-lg font-semibold '>Get Tickets</button>
+                                </Link>
                             </div>
                         </div>
 
                         <div className="col-span-12 lg:col-span-8">
-
                             <MovieDetailsCard />
 
                         </div>

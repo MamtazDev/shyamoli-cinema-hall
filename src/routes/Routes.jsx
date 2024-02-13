@@ -8,9 +8,7 @@ import AuthLayout from "../Layout/AuthLayout";
 import Login from "../components/Authentication/Login";
 import Register from "../components/Authentication/Register";
 import VerifyPhone from "../components/Authentication/VerifyPhone";
-import Gallary from "../components/Home/Gallary";
 import GallaryPage from "../Page/GallaryPage";
-import Steppers from "../Page/Steppers";
 import ContactUs from "../Page/ContactUs";
 import DownloadTicket from "../Page/DownloadTicket";
 import { PremiumTicket } from "../Page/PremiumTicket";
@@ -27,7 +25,7 @@ const router = createBrowserRouter([
                 element: <Home />
             },
             {
-                path: '/movieDetails',
+                path: '/movie-details',
                 element: <MovieDetails />
             },
 
