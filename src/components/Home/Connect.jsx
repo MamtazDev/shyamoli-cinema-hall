@@ -9,7 +9,7 @@ const Connect = () => {
         <>
             <div className='connect_page '>
 
-                <div className="flex flex-col items-center justify-center lg:flex-row">
+                <div className="flex flex-col items-center justify-center lg:flex-row lg:mx-0 mx-[24px]">
 
                     <div className='text-white text-base font-medium flex flex-col lg:px-0 px-[20px] gap-[12px] lg:w-[487px] w-full lg:mb-0 mb-[50px] '>
                         <h3 className='text-white text-[36px] font-bold mb-[24px]'>Let’s connect</h3>
