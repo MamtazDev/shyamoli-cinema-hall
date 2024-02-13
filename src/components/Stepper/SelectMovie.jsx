@@ -1,31 +1,37 @@
 /* eslint-disable react/prop-types */
-import React from 'react'
+import React, { useState } from 'react'
 import show from '../../assets/selectMovie.png';
-import selected from '../../assets/seleccheck.png';
+import selected from '../../assets/selectmovieIcon.png';
 import DateSelect from './DateSelect';
 import './SelectMovie.css';
 import AvailAbleMovieTime from './AvailAbleMovieTime';
 import StepperButtons from './StepperButtons';
+import back from '../../assets/back.svg';
+import { Link } from 'react-router-dom';
 
 const SelectMovie = ({ complete, handleNext }) => {
 
-    console.log(complete);
+    const [selectMovie, setSelectMovie] = useState(false)
+    const handleSelect = () => {
+        setSelectMovie(!selectMovie)
+    }
 
     return (
         <>
-            <div className='mt-[32px]'>
+            <div className='mt-[36px]'>
+                <Link to="/movie-details">
+                    <button className="text-lg border-0 btn mb-[32px] " ><img src={back} alt="back" />Back</button>
+                </Link>
                 <h2 className='text-primary text-[30px] font-bold leading-[30px] mb-[36px] '> Select Movie</h2>
 
                 {[1, 2, 3, 4].map((data) => (
                     <>
-                        <div className="grid grid-cols-12 gap-[32px]">
-                            <div className="col-span-12 lg:col-span-3 ">
-                                <div className='border-[2px] rounded-[16px] cursor-pointer border-[#FF3D48] bg-primary relative h-[440px] '>
+                        <div key={data} className="grid grid-cols-12 gap-[32px]">
+                            <div onClick={handleSelect} className="col-span-12 lg:col-span-3 ">
+                                <div className={` border-[2px]  rounded-[16px] cursor-pointer ${selectMovie ? "border-[#FF3D48] " : "border-[#141414]"} relative h-[440px]`}>
                                     <img src={show} alt="show" />
-                                    <div className='absolute right-[6px] top-[9px]  w-[80px] flex justify-center items-center' style={{
-                                        transform: 'rotate(38.605deg)'
-                                    }}>
-                                        <img src={selected} alt="selected" />
+                                    <div className='absolute right-[-2px] top-[0px]  w-[80px] flex justify-center items-center'>
+                                        {selectMovie && <img src={selected} alt="selected" />}
                                     </div>
                                 </div>
                             </div>

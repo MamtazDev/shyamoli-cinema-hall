@@ -5,7 +5,7 @@ import TicketType from './TicketType';
 import TicketQuantity from './TicketQuantity';
 import StepperButtons from '../StepperButtons';
 
-const BuyTickets = ({ complete, currentStep, handleNext }) => {
+const BuyTickets = ({ complete, handleNext }) => {
 
     return (
         <div>

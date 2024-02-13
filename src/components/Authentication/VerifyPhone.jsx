@@ -17,11 +17,18 @@ const VerifyPhone = () => {
                     <form className='text-sm text-[#EAEAEA]  font-medium'>
                         <div className='flex flex-col w-full mb-[16px]'>
                             <label className='mb-[8px]'>Phone Number</label>
-                            <div className='flex  gap-[18px] justify-center'>
-                                <input type="email" className='ps-[16px] h-[50px] rounded-[8px] border border-[#D9D9D9]  bg-[#232323] w-[73px] placeholder:text-[#9CA4AB]' />
-                                <input type="email" className='ps-[16px] h-[50px] rounded-[8px] border border-[#D9D9D9]  bg-[#232323] w-[73px] placeholder:text-[#9CA4AB]' />
-                                <input type="email" className='ps-[16px] h-[50px] rounded-[8px] border border-[#D9D9D9]  bg-[#232323] w-[73px] placeholder:text-[#9CA4AB]' />
-                                <input type="email" className='ps-[16px] h-[50px] rounded-[8px] border border-[#D9D9D9]  bg-[#232323] w-[73px] placeholder:text-[#9CA4AB]' />
+                            <div className='flex  gap-[18px] justify-start'>
+                                {[0, 1, 2, 3, 4, 5].map(() => (
+                                    <>
+                                        <input
+                                            type="text"
+                                            value="7"
+                                            className='flex text-[20px] h-[50px] rounded-[8px] border border-[#D9D9D9] bg-[#232323] w-[69px] placeholder:text-[#9CA4AB]'
+                                            style={{ textAlign: 'center' }}
+                                        />
+
+                                    </>
+                                ))}
                             </div>
                         </div>
                         <div className="mt-[20px] mb-[36px]">

@@ -50,7 +50,6 @@ const Register = () => {
 
             {/*  login with buttons  */}
             <LoginWithButtons dividerW="180px" action="Register" text="Or Sign Up with" />
-
           </form>
         </div>
 

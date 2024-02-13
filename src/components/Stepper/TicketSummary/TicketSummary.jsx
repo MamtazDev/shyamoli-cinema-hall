@@ -17,8 +17,7 @@ const TicketSummary = ({  complete, handleNext }) => {
                 <h2 className='text-primary text-[30px] font-bold leading-[30px] mb-[36px] '>Ticket Summary</h2>
                 <div className='p-[32px] bg-[#1A1A1A]  border border-[#262626] rounded-[12px]'>
 
-                    <div className='lg:max-w-[567px] w-full mx-auto'>
-
+                    <div className='lg:max-w-[567px] w-full mx-auto mb-[80px]'>
                         {/* ticekt summery */}
                         <div className='p-[24px] border border-[#FFFFFF21] rounded-[8px]  '>
                             <div className='flex gap-[32px] items-start'>

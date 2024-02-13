@@ -1,9 +1,8 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
 import success from '../../../assets/success.png'
-import StepperButtons from '../StepperButtons'
 
-const Confirmation = ({ complete, currentStep, handleNext }) => {
+const Confirmation = () => {
     return (
         <div>
             <div className='mt-[32px] '>
