@@ -1,6 +1,7 @@
 import React from 'react'
 
 import logo from '../../assets/logo.png'
+import bar from '../../assets/bar.svg'
 import { Link, useLocation } from 'react-router-dom'
 
 
@@ -16,7 +17,8 @@ const Header = () => {
           <div className="flex flex-row-reverse justify-between lg:flex-row lg:navbar-start sm:flex-row">
             <div className="dropdown">
               <div tabIndex={0} role="button" className="flex justify-end btn btn-ghost lg:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              
+              <img src={bar} alt="" />
               </div>
               <ul tabIndex={0} className="absolute right-[10px] flex justify-center items-center gap-[20px] bg-primary menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow w-[400px] ">
                 <li><Link to="/">Home </Link></li>

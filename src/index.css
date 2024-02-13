@@ -212,6 +212,12 @@ background: var(--Black-20, #333); */
     transform: scale(1.1);
 }
 
+.img_hover_show:hover .hover_txt{
+    color: #FF3D48;
+    transition: ease-in-out 0.3s;
+    
+}
+
 /* cast_slider */
 .cast_slider .swiper-button-next {
     right: 0;

@@ -169,7 +169,6 @@ const TicketSummary = ({  complete, handleNext }) => {
                                 </div>
                             </div>
                         </div>
-                        {/*  */}
                         <div className='p-[24px] border border-[#FFFFFF21] rounded-[8px] mt-[32px] flex justify-between '>
                             <div className='flex gap-[8px] items-center'>
                                 <img src={amount} alt="" />

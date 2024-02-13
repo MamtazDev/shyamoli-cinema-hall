@@ -12,28 +12,28 @@ const NowShowoing = () => {
                 <h1 className='text-primary text-[36px] font-bold text-center mb-[36px]'>Now Showing</h1>
 
                 <div className="grid grid-cols-12">
-                    <div className="col-span-12 lg:col-span-3">
+                    <div className="col-span-12 mx-auto lg:col-span-3 lg:mb-0 mb-[24px]">
                         <div className='relative img_hover_show'>
                             <Link to="/movie-details"><img src={show1} alt="show1" /></Link>
-                            <p className='text-[24px] hover:text-primary text-white font-bold absolute bottom-[24px] left-[16px] '>Hubba</p>
+                            <p className='hover_txt text-[24px] hover:text-primary text-white font-bold absolute bottom-[24px] left-[16px] '>Hubba</p>
                         </div>
                     </div>
-                    <div className="col-span-12 lg:col-span-3">
+                    <div className="col-span-12 mx-auto lg:col-span-3 lg:mb-0 mb-[24px]">
                         <div className='relative img_hover_show'>
                             <Link to="/movie-details"><img src={show2} alt="show1" /></Link>
-                            <p className='text-[24px] hover:text-primary text-white font-bold absolute bottom-[24px] left-[16px] '>Top Gun: Maverick</p>
+                            <p className='hover_txt text-[24px] hover:text-primary text-white font-bold absolute bottom-[24px] left-[16px] '>Top Gun: Maverick</p>
                         </div>
                     </div>
-                    <div className="col-span-12 lg:col-span-3">
+                    <div className="col-span-12 mx-auto lg:col-span-3 lg:mb-0 mb-[24px]">
                         <div className='relative img_hover_show'>
                             <Link to="/movie-details"><img src={show3} alt="show1" /></Link>
-                            <p className='text-[24px] hover:text-primary text-white font-bold absolute bottom-[24px] left-[16px] '>MR-9 : Do or Die</p>
+                            <p className='hover_txt text-[24px] hover:text-primary text-white font-bold absolute bottom-[24px] left-[16px] '>MR-9 : Do or Die</p>
                         </div>
                     </div>
-                    <div className="col-span-12 lg:col-span-3">
+                    <div className="col-span-12 mx-auto lg:col-span-3 lg:mb-0 mb-[24px]">
                         <div className='relative img_hover_show'>
                             <Link to="/movie-details"><img src={show4} alt="show1" /></Link>
-                            <p className='text-[24px] hover:text-primary text-white font-bold absolute bottom-[24px] left-[16px] '>Priyotoma</p>
+                            <p className='hover_txt text-[24px] hover:text-primary text-white font-bold absolute bottom-[24px] left-[16px] '>Priyotoma</p>
                         </div>
                     </div>
                 </div>
