@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 // import required modules
-import { Pagination, Navigation, HashNavigation,Autoplay } from 'swiper/modules';
+import { Pagination, Navigation, HashNavigation, Autoplay } from 'swiper/modules';
 import UpComingShowCards from './UpComingShowCards';
 
 const UpComingShow = () => {
@@ -19,12 +19,12 @@ const UpComingShow = () => {
                 {/* <div className='bg-[#0F0F0F] h-[56px] w-[134px] absolute right-[376px] top-[69px] lg:block hidden '></div> */}
                 <Swiper
                     spaceBetween={30}
-
-                    // pagination={{
-                    //     clickable: true,
-                    // }}
                     navigation={true}
-                    modules={[Pagination, Navigation, HashNavigation,Autoplay]}
+                    modules={[Pagination, Navigation, HashNavigation, Autoplay]}
+                    autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    }}
                     className="mySwiper text-white h-[800px]"
                 >
                     <SwiperSlide data-hash="slide1" className='pt-[100px]'>

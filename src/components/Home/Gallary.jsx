@@ -10,12 +10,20 @@ const Gallary = () => {
             <div className='bg-black pb-[80px] pt-[80px]'>
                 <h1 className='text-primary text-[36px] font-bold text-center mb-[24px]'>Our Gallery</h1>
                 <div className='flex lg:flex-row flex-col gap-[32px] justify-center mb-[32px]'>
-                    <img src={g1} alt="gallary" />
-                    <img src={g2} alt="gallary" />
+                    <div className="hover_img">
+                        <img src={g1} alt="gallary" />
+                    </div>
+                    <div className="hover_img">
+                        <img src={g2} alt="gallary" />
+                    </div>
                 </div>
                 <div className='flex lg:flex-row flex-col gap-[32px] justify-center '>
-                    <img src={g3} alt="gallary" />
-                    <img src={g4} alt="gallary" />
+                    <div className="hover_img">
+                        <img src={g3} alt="gallary" />
+                    </div>
+                    <div className="hover_img">
+                        <img src={g4} alt="gallary" />
+                    </div>
                 </div>
 
 

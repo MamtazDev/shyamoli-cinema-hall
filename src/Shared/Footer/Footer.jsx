@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../../assets/logo.png'
+import { Link } from 'react-router-dom'
 export const Footer = () => {
     return (
         <>
@@ -31,9 +32,9 @@ export const Footer = () => {
                     <div className='flex lg:justify-between   justify-center lg:items-start items-center lg:flex-row flex-col  text-[#E2E8F0] lg:gap-0 gap-[30px]'>
                         <p className=''>© 2024 Shymoli Cinema Hall. All rights reserved.</p>
                         <ul className='flex gap-[16px] text-base font-normal'>
-                            <li>Show Time</li>
-                            <li>Booking</li>
-                            <li>About Us</li>
+                            <Link to="#">  <li>Show Time</li></Link>
+                            <Link to="#">  <li>Booking</li></Link>
+                            <Link to="#"> <li>About Us</li></Link>
                         </ul>
                     </div>
 

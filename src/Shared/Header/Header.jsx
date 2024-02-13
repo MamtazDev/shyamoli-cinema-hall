@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <div className='absolute z-50 w-full'>
-      <div className={`w-full text-white  `} >
+      <div className={`w-full text-white  ${location.pathname =='/' ? "" :"bg-[#1b1b1b]"} `} >
         <div className="navbar lg:flex  mx-auto h-[82px] lg:max-w-[1280px] w-full ">
           <div className="flex flex-row-reverse justify-between lg:flex-row lg:navbar-start sm:flex-row">
             <div className="dropdown">

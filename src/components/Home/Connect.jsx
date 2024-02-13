@@ -9,7 +9,7 @@ const Connect = () => {
         <>
             <div className='connect_page '>
 
-                <div className="flex lg:flex-row flex-col  justify-center items-center">
+                <div className="flex flex-col items-center justify-center lg:flex-row">
 
                     <div className='text-white text-base font-medium flex flex-col lg:px-0 px-[20px] gap-[12px] lg:w-[487px] w-full lg:mb-0 mb-[50px] '>
                         <h3 className='text-white text-[36px] font-bold mb-[24px]'>Let’s connect</h3>
@@ -48,7 +48,7 @@ const Connect = () => {
                         </div>
 
 
-                        <button className='text-white max-w-[200px] w-full bg-[#FF3D48] border border-[#FF3D48] shadow-button py-[12px] rounded-[8px] '>Send Message</button>
+                        <button className='text-white max-w-[200px] w-full bg-[#FF3D48] border border-[#FF3D48] hover:bg-transparent hover:text-primary shadow-button py-[12px] rounded-[8px] '>Send Message</button>
                     </form>
 
                 </div>

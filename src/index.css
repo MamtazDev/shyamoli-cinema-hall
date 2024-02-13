@@ -180,7 +180,7 @@ background: var(--Black-20, #333); */
 
 }
 
-.hover_img img {
+/* .hover_img img {
     border-radius: 10px;
     overflow: hidden;
     transition: 2.9s;
@@ -188,9 +188,29 @@ background: var(--Black-20, #333); */
 
 .hover_img img:hover {
     transform: scale(1.5) !important;
+} */
+
+/* home page gallary img hover */
+.hover_img {
+    height: 544px;
+    overflow: hidden;
 }
 
+.hover_img img {
+    transition: transform .5s ease;
+}
 
+.hover_img:hover img {
+    transform: scale(1);
+}
+
+.hover_img img {
+    transition: transform .5s, filter 1.5s ease-in-out;
+}
+
+.hover_img:hover img {
+    transform: scale(1.1);
+}
 
 /* cast_slider */
 .cast_slider .swiper-button-next {
