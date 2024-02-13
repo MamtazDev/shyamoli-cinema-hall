@@ -30,8 +30,8 @@ export const SeatsArrangeMent = () => {
 
           <div className='flex gap-[12px]'>
             {firstTwoOdd.map((data) => (<>
-              <div className='w-[66px] h-[48px] bg-[#3D3D3D] rounded-[4px] opacity-[0.6] flex justify-center items-center text-[20px] font-medium  '>
-                {data.seatNumber}
+              <div className=' cursor-pointer hover:text-[#111827] w-[66px] h-[48px] bg-[#3D3D3D] hover:bg-[#AAAAAA] rounded-[4px] opacity-[0.6] flex justify-center items-center text-[20px] font-medium  '>
+                <button>       {data.seatNumber}</button>
               </div>
             </>))
             }
@@ -39,8 +39,8 @@ export const SeatsArrangeMent = () => {
           <div className='flex gap-[12px] mt-[12px]'>
             {firstThreeOdd.map(data => (
               <>
-                <div className='w-[66px] h-[48px] bg-[#3D3D3D] rounded-[4px] opacity-[0.6] flex justify-center items-center text-[20px] font-medium'>
-                  {data.seatNumber}
+                <div className=' cursor-pointer hover:text-[#111827] w-[66px] h-[48px] bg-[#3D3D3D] hover:bg-[#AAAAAA] rounded-[4px] opacity-[0.6] flex justify-center items-center text-[20px] font-medium'>
+                  <button>       {data.seatNumber}</button>
                 </div>
               </>
             ))}
@@ -50,8 +50,8 @@ export const SeatsArrangeMent = () => {
               {
                 oddIdSeats.map((data) => (
                   <>
-                    <div className='col-span-2 w-[66px] h-[48px] bg-[#3D3D3D] rounded-[4px] opacity-[0.6] flex justify-center items-center text-[20px] font-medium'>
-                      {data.seatNumber}
+                    <div className='col-span-2 w-[66px] h-[48px] bg-[#3D3D3D] hover:bg-[#AAAAAA] rounded-[4px] opacity-[0.6] flex justify-center items-center text-[20px] font-medium'>
+                      <button>       {data.seatNumber}</button>
                     </div>
                   </>
                 ))
@@ -64,8 +64,8 @@ export const SeatsArrangeMent = () => {
         <div className="col-span-6">
           <div className='flex gap-[12px] justify-end'>
             {firstTwoEven.map((data) => (<>
-              <div className='w-[66px] h-[48px] bg-[#3D3D3D] rounded-[4px] opacity-[0.6] flex justify-center items-center text-[20px] font-medium  '>
-                {data.seatNumber}
+              <div className=' cursor-pointer hover:text-[#111827] w-[66px] h-[48px] bg-[#3D3D3D] hover:bg-[#AAAAAA] rounded-[4px] opacity-[0.6] flex justify-center items-center text-[20px] font-medium  '>
+                <button>       {data.seatNumber}</button>
               </div>
             </>))
             }
@@ -73,8 +73,8 @@ export const SeatsArrangeMent = () => {
           <div className='flex gap-[12px] mt-[12px] justify-end '>
             {firstThreeEven.map(data => (
               <>
-                <div className='w-[66px] h-[48px] bg-[#3D3D3D] rounded-[4px] opacity-[0.6] flex justify-center items-center text-[20px] font-medium'>
-                  {data.seatNumber}
+                <div className=' cursor-pointer hover:text-[#111827] w-[66px] h-[48px] bg-[#3D3D3D] hover:bg-[#AAAAAA] rounded-[4px] opacity-[0.6] flex justify-center items-center text-[20px] font-medium'>
+                  <button>       {data.seatNumber}</button>
                 </div>
               </>
             ))}
@@ -84,8 +84,8 @@ export const SeatsArrangeMent = () => {
               {
                 oddIdSeats.map((data) => (
                   <>
-                    <div className={`col-span-2 w-[66px] h-[48px] bg-[#3D3D3D] rounded-[4px] opacity-[0.6] flex justify-center items-center text-[20px] font-medium`}>
-                      {data.seatNumber}
+                    <div className={`col-span-2 w-[66px] h-[48px] bg-[#3D3D3D] hover:bg-[#AAAAAA] rounded-[4px] opacity-[0.6] flex justify-center items-center text-[20px] font-medium`}>
+                      <button>       {data.seatNumber}</button>
                     </div>
                   </>
                 ))

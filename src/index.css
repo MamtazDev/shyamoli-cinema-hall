@@ -8,9 +8,11 @@
 body {
     font-family: 'Inter', sans-serif;
 }
-.navbar{
+
+.navbar {
     display: flex;
 }
+
 .bg_banner {
     background-image: url('/src/assets/HeroBanner.svg');
     background-repeat: no-repeat;
@@ -64,6 +66,7 @@ background: var(--Black-20, #333); */
     background-image: url('/src/assets/upcommingshowleft.svg') !important;
     background-size: contain;
 }
+
 .upcomming_show .swiper-button-next:after {
     content: '' !important;
     width: 28px;
@@ -71,6 +74,7 @@ background: var(--Black-20, #333); */
     background-image: url('/src/assets/upcomingarrowright.svg') !important;
     background-size: contain;
 }
+
 /* 
 .upcomming_show .swiper-button-next:after {
     content: '' !important;
@@ -134,19 +138,23 @@ background: var(--Black-20, #333); */
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(15px);
 }
+
 .banner .swiper-pagination-fraction,
 .banner .swiper-pagination-custom,
 .banner .swiper-horizontal>.banner .swiper-pagination-bullets,
 .banner .swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom:8% !important;
+    bottom: 8% !important;
 }
+
 @media (max-width:768px) {
-    .navbar{
+    .navbar {
         display: inline;
     }
+
     .bg_banner {
         height: 574px !important;
     }
+
     .banner .swiper-pagination-fraction,
     .banner .swiper-pagination-custom,
     .banner .swiper-horizontal>.banner .swiper-pagination-bullets,
@@ -163,11 +171,11 @@ background: var(--Black-20, #333); */
     .upcomming_show .swiper-button-next {
         display: none !important;
     }
-    
+
     .upcomming_show .swiper-horizontal>.swiper-pagination-bullets,
     .upcomming_show .swiper-pagination-bullets.swiper-pagination-horizontal {
         display: none !important;
-        
+
     }
 
 }
@@ -390,4 +398,22 @@ input:checked~.checkmark {
 .active:not(:first-child):before {
     @apply bg-[#FFFFFF80];
     border: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* now showing */
+.img_hover_show:hover .img_hover_show>p {
+    color: red !important;
 }
