@@ -2,7 +2,7 @@ import React from 'react'
 import selectMovie from '../../../assets/selectMovie.png'
 import i1 from '../../../assets/i1.png'
 import i2 from '../../../assets/i2.png'
-import i3 from '../../../assets/i4.png'
+import i3 from '../../../assets/i4.svg'
 import i4 from '../../../assets/i6.png'
 import i5 from '../../../assets/i5.png'
 import amount from '../../../assets/amount.svg'
@@ -177,10 +177,7 @@ const TicketSummary = ({  complete, handleNext }) => {
                             </div>
                             <p className='text-[#F8FAFC] text-sm font-medium leading-[20px]'>600 tk</p>
                         </div>
-                        {/* 
-                        <div className="flex flex-col items-center gap-[12px] justify-center mt-[32px] ">
-                            <button onClick={onNext} className='max-w-[462px] w-full bg-[#FF3D48] rounded-[8px] shadow-button py-[16px] font-semibold text-white text-base'>Next</button>
-                        </div> */}
+               
                         {!complete && (
                             <StepperButtons onNext={handleNext}>
                                Next
