@@ -16,7 +16,7 @@ const TicketType = () => {
     };
     return (
         <div>
-            <div className='flex justify-center gap-[32px] '>
+            <div className='flex lg:flex-row flex-col items-center justify-center gap-[32px] '>
                 <div
                     onClick={handleSelectPremium}
                     className={`text-white buy_tickets border p-[12px]  relative ${selectPremium ? ' border-[#FF3D48]' : 'border-[#141414]'

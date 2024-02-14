@@ -9,10 +9,9 @@ const Confirmation = () => {
                 <h2 className='text-primary text-[30px] font-bold leading-[30px] mb-[36px] '>Confirmation</h2>
                 <div className='p-[24px] pt-[60px] bg-[#1A1A1A]  border border-[#262626] rounded-[12px] '>
                     <div className='max-w-[463px] mx-auto w-full rounded-[20px] bg-[#25282e] pt-[100px] px-[27px] pb-[53px] relative'>
-                        <div className='absolute top-[-59px] left-[35%]'>
+                        <div className='absolute top-[-59px] lg:left-[35%] left-[29%]'>
                             <img src={success} alt="" />
                         </div>
-
                         <h2 className='text-[30px] font-bold leading-[36px] text-center '>Congratulations</h2>
                         <p className='text-lg font-normal leading-[28px] text-center text-[#FFFFFFB7] mt-[9px]'>You’ve successfully purchase tickets</p>
                         <div className='h-[1px] bg-[#FFFFFF29] my-[40px] '> </div>

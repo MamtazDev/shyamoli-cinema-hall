@@ -97,12 +97,12 @@ const DateSelect = () => {
                 }}
             >
                 {[...Array(10)].map((_, index) => (
-                    <SwiperSlide key={index} className='w-full '>
+                    <SwiperSlide key={index} className='w-[99px]'>
                         <div
                             onClick={() => handleActive(index)}
                             className={`h-[108px] w-[99px] rounded-[8px] cursor-pointer p-[10px] text-center ${activeIndex === index
-                                    ? 'bg-white'
-                                    : 'border-[2px] border-[#A6A6A6]'
+                                ? 'bg-white'
+                                : 'border-[2px] border-[#A6A6A6]'
                                 }`}
                         >
                             <p
