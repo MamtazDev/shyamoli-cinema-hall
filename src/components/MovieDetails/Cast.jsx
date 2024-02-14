@@ -93,7 +93,6 @@ const Cast = () => {
         <SwiperSlide>
           <div className=''>
             <img src={cast5} alt="cast" />
-
           </div>
         </SwiperSlide>
         <SwiperSlide>

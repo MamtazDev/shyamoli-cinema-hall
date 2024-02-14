@@ -16,8 +16,6 @@ export const PremiumTicket = () => {
                         <button  className='max-w-[462px] w-full bg-[#FF3D48] rounded-[8px] shadow-button py-[16px] font-semibold text-white text-base'>Download All Ticket</button>
                     </div>
                     </div>
-
-
                 </div>
             </div>
 
