@@ -27,7 +27,7 @@ const Connect = () => {
                         <div className='flex items-center  gap-[12px]'
                             data-aos="fade-right"
                             data-aos-offset="200"
-                            data-aos-delay="50"
+                            data-aos-delay="100"
                             data-aos-duration="1000"
                             data-aos-easing="ease-in-out">
                             <img src={phone} alt="" />
@@ -36,7 +36,7 @@ const Connect = () => {
                         <div className='flex items-center gap-[12px]'
                             data-aos="fade-left"
                             data-aos-offset="200"
-                            data-aos-delay="50"
+                            data-aos-delay="500"
                             data-aos-duration="1000"
                             data-aos-easing="ease-in-out">
                             <img src={email} alt="" />
@@ -45,7 +45,7 @@ const Connect = () => {
                         <div className='flex  items-center gap-[12px]'
                             data-aos="fade-right"
                             data-aos-offset="200"
-                            data-aos-delay="50"
+                            data-aos-delay="1000"
                             data-aos-duration="1000"
                             data-aos-easing="ease-in-out">
                             <img src={location} alt="" />
@@ -54,23 +54,43 @@ const Connect = () => {
                     </div>
 
                     <form className='lg:p-[40px] p-[20px] lg:mx-0 mx-[20px]  contact_form  flex flex-col gap-[24px] text-white '>
-                        <div className='flex flex-col gap-[4px] lg:w-[488px] w-[100%] '>
+                        <div className='flex flex-col gap-[4px] lg:w-[488px] w-[100%] ' data-aos="fade-up"
+                            data-aos-offset="200"
+                            data-aos-delay="50"
+                            data-aos-duration="1000"
+                            data-aos-easing="ease-in-out">
                             <label className='text-sm text-[#E2E8F0]'>Your name</label>
                             <input type="text" className='ps-[10px]  bg-transparent border rounded-[6px] h-[48px] border-[#CBD5E1] ' />
                         </div>
-                        <div className='flex flex-col gap-[4px] lg:w-[488px] w-[100%]  '>
+                        <div className='flex flex-col gap-[4px] lg:w-[488px] w-[100%]  ' data-aos="fade-up"
+                            data-aos-offset="200"
+                            data-aos-delay="200"
+                            data-aos-duration="1000"
+                            data-aos-easing="ease-in-out">
                             <label className='text-sm text-[#E2E8F0]  '>Email address</label>
                             <input type="email" className='ps-[10px]  bg-transparent border rounded-[6px] h-[48px] border-[#CBD5E1] ' />
                         </div>
-                        <div className='flex flex-col gap-[4px] lg:w-[488px] w-[100%]  '>
+                        <div className='flex flex-col gap-[4px] lg:w-[488px] w-[100%]  ' data-aos="fade-up"
+                            data-aos-offset="200"
+                            data-aos-delay="500"
+                            data-aos-duration="1000"
+                            data-aos-easing="ease-in-out">
                             <label className='text-sm text-[#E2E8F0]'>Phone number</label>
                             <input type="number" className='ps-[10px]  bg-transparent border rounded-[6px] h-[48px] border-[#CBD5E1] ' />
                         </div>
-                        <div className='flex flex-col gap-[4px] lg:w-[488px] w-[100%]  '>
+                        <div className='flex flex-col gap-[4px] lg:w-[488px] w-[100%]  ' data-aos="fade-up"
+                            data-aos-offset="200"
+                            data-aos-delay="1000"
+                            data-aos-duration="1000"
+                            data-aos-easing="ease-in-out">
                             <label className='text-sm text-[#E2E8F0]'>Message</label>
                             <textarea name="" id="" cols="30" rows="10" className='ps-[10px]  bg-transparent border rounded-[6px] h-[112px] border-[#CBD5E1]'></textarea>
                         </div>
-                        <button className='text-white max-w-[200px] w-full bg-[#FF3D48] border border-[#FF3D48] hover:bg-transparent hover:text-primary shadow-button py-[12px] rounded-[8px] '>Send Message</button>
+                        <button data-aos="fade-up"
+                            data-aos-offset="200"
+                            data-aos-delay="1500"
+                            data-aos-duration="1000"
+                            data-aos-easing="ease-in-out" className='text-white max-w-[200px] w-full bg-[#FF3D48] border border-[#FF3D48] hover:bg-transparent hover:text-primary shadow-button py-[12px] rounded-[8px] '>Send Message</button>
                     </form>
 
                 </div>

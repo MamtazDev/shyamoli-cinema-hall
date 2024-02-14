@@ -33,23 +33,24 @@ const Details = ({ complete, handleNext }) => {
                                 }
                             </div>
                         </div>
-
-                        {phoneVerify && <div className='flex flex-col gap-[8px] text-sm font-normal leading-[20px] relative mt-[8px]'>
-                            <input type="text" className='bg-transparent border border-[#7B7B7B] rounded-[8px] py-[10px] px-[12px]' placeholder="Enter your phone number" />
+                        {phoneVerify && !sendOtp && <div className='flex flex-col gap-[8px] text-sm font-normal leading-[20px] relative mt-[8px]'>
+                            <input type="text" className='bg-transparent border border-[#7B7B7B] rounded-[8px] py-[10px] px-[12px] ps-[48px]' placeholder="Enter your otp" />
+                            <div className='text-[#7c7f82] text-sm font-normal absolute top-[11px] left-[12px]'>
+                                OTP
+                            </div>
                             <div className='absolute top-[11px] right-[12px]'>
                                 <button onClick={() => setSendOtp(true)} className='text-primary'>Send</button>
                             </div>
                         </div>}
 
                     </div>
-                    {/* <div className="flex flex-col items-center gap-[12px] justify-center mt-[32px]  ">
-                        <button onClick={onNext} className='max-w-[462px] w-full bg-[#FF3D48] rounded-[8px] shadow-button py-[16px] font-semibold text-white text-base'>Next</button>
-                    </div> */}
+
                     {!complete && (
                         <StepperButtons onNext={handleNext}>
-                           Next
+                            Next
                         </StepperButtons>
-                    )}                </div>
+                    )}
+                </div>
             </div>
 
 

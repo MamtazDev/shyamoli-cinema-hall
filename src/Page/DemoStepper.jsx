@@ -33,7 +33,7 @@ const DemoStepper = () => {
 
     return (
         <>
-            <div className='bg-[#141414] pt-[160px] text-white'>
+            <div className='bg-[#141414] pt-[160px] pb-[80px] text-white'>
                 <div className='max-w-[1280px] w-full mx-auto '>
 
                     <div className="flex justify-between max-w-[1047px] mx-auto">

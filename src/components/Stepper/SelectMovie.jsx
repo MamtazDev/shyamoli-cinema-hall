@@ -18,7 +18,7 @@ const SelectMovie = ({ complete, handleNext }) => {
 
     return (
         <>
-            <div className='mt-[36px]'>
+            <div className='mt-[36px] pb-[80px] '>
                 <Link to="/movie-details">
                     <button className="text-lg border-0 btn mb-[32px] " ><img src={back} alt="back" />Back</button>
                 </Link>
@@ -54,7 +54,7 @@ const SelectMovie = ({ complete, handleNext }) => {
                         Purchase Now
                     </StepperButtons>
                 )}
-                <p className='text-sm font-normal '>You’ve Selected <span>2</span> Movies</p>
+                <p className='text-sm font-normal text-center mt-[12px]'>You’ve Selected <span>2</span> Movies</p>
             </div>
 
 

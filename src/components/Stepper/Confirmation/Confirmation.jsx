@@ -4,11 +4,11 @@ import success from '../../../assets/success.png'
 
 const Confirmation = () => {
     return (
-        <div>
-            <div className='mt-[32px] '>
+        <>
+            <div className='mt-[32px]'>
                 <h2 className='text-primary text-[30px] font-bold leading-[30px] mb-[36px] '>Confirmation</h2>
-                <div className='p-[24px] bg-[#1A1A1A]  border border-[#262626] rounded-[12px]'>
-                    <div className='max-w-[463px] mx-auto w-full rounded-[20px] bg-[#25282e] pt-[80px] px-[27px] pb-[53px] relative'>
+                <div className='p-[24px] pt-[60px] bg-[#1A1A1A]  border border-[#262626] rounded-[12px] '>
+                    <div className='max-w-[463px] mx-auto w-full rounded-[20px] bg-[#25282e] pt-[100px] px-[27px] pb-[53px] relative'>
                         <div className='absolute top-[-59px] left-[35%]'>
                             <img src={success} alt="" />
                         </div>
@@ -45,13 +45,13 @@ const Confirmation = () => {
                     </div>
 
                     <div className="flex flex-col items-center gap-[12px] justify-center mt-[32px]  ">
-                        <button className='max-w-[462px] w-full bg-[#FF3D48] rounded-[8px] shadow-button py-[16px] font-semibold text-white text-base'>Download Ticket</button>
+                        <button className='max-w-[462px] w-full bg-[#FF3D48] rounded-[8px] shadow-button py-[16px] font-semibold text-white text-base mb-[62px]'>Download Ticket</button>
                     </div>
 
                 </div>
 
             </div>
-        </div>
+        </>
 
     )
 }
