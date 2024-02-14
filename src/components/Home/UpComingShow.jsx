@@ -38,7 +38,7 @@ const UpComingShow = () => {
                         },
                         1024: {
                           slidesPerView: 3,
-                          spaceBetween: 50,
+                          spaceBetween: 10,
                         },
                       }}
                     className="mySwiper text-white h-[800px]"

@@ -24,7 +24,6 @@
     content: '' !important;
     width: 20px;
     height: 20px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,9 +36,17 @@
     display: flex;
     width: 20px;
     height: 20px;
-
     justify-content: center;
     align-items: center;
     background-image: url(/src/assets/castra.png) !important;
     background-repeat: no-repeat;
 }
+
+/* .date_select_slider .swiper-slide{
+    width: 99px !important;
+} */
+
+/* .date_select_slider .swiper{
+    max-width: 789px !important;
+    width: full;
+} */

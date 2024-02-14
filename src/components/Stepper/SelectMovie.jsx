@@ -18,18 +18,17 @@ const SelectMovie = ({ complete, handleNext }) => {
 
     return (
         <>
-            <div className='mt-[36px] pb-[80px] '>
+            <div className='mt-[36px] pb-[80px] lg:mx-0 mx-[24px]'>
                 <Link to="/movie-details">
-                    <button className="text-lg border-0 btn mb-[32px] " ><img src={back} alt="back" />Back</button>
+                    <button className="text-lg border-0  mb-[32px] flex gap-[4px] " ><img src={back} alt="back" /> <p>Back</p> </button>
                 </Link>
-                <h2 className='text-primary text-[30px] font-bold leading-[30px] mb-[36px] '> Select Movie</h2>
-
-                {[1, 2, 3, 4].map((data) => (
+                <h2 className='text-primary text-[30px] font-bold leading-[30px] mb-[36px]  '> Select Movie</h2>
+                {[1].map((data) => (
                     <>
                         <div key={data} className="grid grid-cols-12 gap-[32px]">
                             <div onClick={handleSelect} className="col-span-12 lg:col-span-3 ">
-                                <div className={` border-[2px]  rounded-[16px] cursor-pointer ${selectMovie ? "border-[#FF3D48] " : "border-[#141414]"} relative h-[440px]`}>
-                                    <img src={show} alt="show" />
+                                <div className={` border-[2px]  rounded-[16px] cursor-pointer ${selectMovie ? "border-[#FF3D48] " : "border-[#141414]"} relative lg:h-[440px] h-full`}>
+                                    <img className='w-full' src={show} alt="show" />
                                     <div className='absolute right-[-2px] top-[0px]  w-[80px] flex justify-center items-center'>
                                         {selectMovie && <img src={selected} alt="selected" />}
                                     </div>

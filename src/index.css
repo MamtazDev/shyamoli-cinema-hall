@@ -232,14 +232,13 @@ background: var(--Black-20, #333); */
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    /* padding: 12px; */
     width: 45px;
     background-color: #141414;
 
 }
 
 .cast_slider .swiper-button-prev {
-    left: 87% ;
+    left: 87%;
     top: 25px;
     border: 0.865px solid var(--Colors-neutral-800, #262626);
     display: flex;
@@ -259,7 +258,6 @@ background: var(--Black-20, #333); */
     display: flex;
     width: 20px;
     height: 20px;
-
     background-image: url(/src/assets/castra.png) !important;
     background-repeat: no-repeat;
 
@@ -278,12 +276,8 @@ background: var(--Black-20, #333); */
 
 }
 
-
-
-
 .react-stepper-horizontal {
     border-width: 11px;
-    /* Set the desired height */
 }
 
 input:checked~.checkmark {
@@ -325,24 +319,21 @@ input:checked~.checkmark {
     margin-top: 10px;
 }
 
-/* On mouse-over, add a grey background color */
 .container1:hover input~.checkmark {
     background-color: #000;
 }
 
-/* When the checkbox is checked, add a blue background */
 .container1 input:checked~.checkmark {
     background-color: red;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
 
-/* Show the checkmark when checked */
+
 .container1 input:checked~.checkmark:after {
     display: block;
 }
@@ -360,24 +351,6 @@ input:checked~.checkmark {
     transform: rotate(45deg);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* stepper */
 .step-item {
     @apply relative flex flex-col items-center justify-center w-36;
@@ -393,12 +366,10 @@ input:checked~.checkmark {
 }
 
 .step {
-    /* @apply bg-[#1b1b1b]; */
     background-color: none !important;
 }
 
 .active {
-    /* @apply bg-red-500; */
     position: relative;
 }
 
@@ -418,9 +389,6 @@ input:checked~.checkmark {
     width: 100px;
 }
 
-/* .complete .step {
-    @apply bg-green-600;
-  } */
 .complete p {
     @apply text-white;
 }
@@ -447,4 +415,28 @@ input:checked~.checkmark {
 /* now showing */
 .img_hover_show:hover .img_hover_show>p {
     color: red !important;
+}
+
+
+
+/* stepper responsive */
+@media(max-width:768px) {
+    .step-item:not(:first-child):before {
+        position: absolute;
+        top: 33.333333%;
+        right: 76%;
+        height: 11px;
+        width: 132px;
+        --tw-translate-y: -50%;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+        --tw-bg-opacity: 1;
+        background-color: rgb(127 127 127 / var(--tw-bg-opacity));
+        --tw-content: '';
+        content: var(--tw-content);
+    }
+    .selectStepperText {
+        width: 100%;
+        /* word-wrap: unset; */
+        white-space: nowrap;
+    }
 }

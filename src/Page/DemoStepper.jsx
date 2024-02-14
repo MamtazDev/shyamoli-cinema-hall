@@ -35,26 +35,24 @@ const DemoStepper = () => {
         <>
             <div className='bg-[#141414] pt-[160px] pb-[80px] text-white'>
                 <div className='max-w-[1280px] w-full mx-auto '>
+                    <div className="flex lg:gap-0 gap-[80px] justify-between lg:overflow-x-hidden overflow-x-scroll max-w-[1047px] lg:mx-auto mx-[11px] ">
 
-                    <div className="flex justify-between max-w-[1047px] mx-auto">
                         {steps?.map((step, i) => (
                             <div
                                 key={i}
                                 className={`step-item ${(i + 1 < currentStep || complete) ? "complete" : ""} ${currentStep === i + 1 ? "active" : ""}`}
                             >
-                                <div className="step" style={{ border: ((i < currentStep - 1) || complete) || (i === currentStep - 1) ? "" : "3px solid #FF3D48" }}>
+                                <div className="step bg-[#1a1a1a]" style={{ border: ((i < currentStep - 1) || complete) || (i === currentStep - 1) ? "" : "3px solid #FF3D48 " }}>
                                     {((i < currentStep - 1) || complete) ? <img src={check} alt="" /> : (i === currentStep - 1) ? <img src={check} alt="" /> : null}
                                 </div>
-                                <p className={`${((i < currentStep - 1) || complete) || (i === currentStep - 1) ? "text-white" : " text-[#FFFFFFCC]"} text-lg font-medium `}>{step.label}</p>
+                                <p className={`${((i < currentStep - 1) || complete) || (i === currentStep - 1) ? "text-white" : " text-[#FFFFFFCC]"} text-sm lg:text-lg w-full whitespace-nowrap font-medium `}>{step.label}</p>
                             </div>
                         ))}
                     </div>
                     {currentStep !== 1 && (
-                        <button className="text-lg border-0 btn mt-[36px]" onClick={handleBack}><img src={back} alt="back" />Back</button>
+                        <button className="text-lg border-0 btn mt-[36px] " onClick={handleBack}><img src={back} alt="back" />Back</button>
                     )}
-                    
                     <div>{steps[currentStep - 1].component}</div>
-
                 </div>
             </div>
         </>
