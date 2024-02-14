@@ -50,3 +50,13 @@
     max-width: 789px !important;
     width: full;
 } */
+
+.slick-track{
+
+/* margin: 0 80px; */
+}
+
+.slick-list{
+    width: 789px;
+    margin: auto;
+}
