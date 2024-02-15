@@ -1,37 +1,51 @@
-.date_select_slider .swiper-button-next {
+
+
+.slick-list {
+    width: 789px;
+    margin: auto;
+}
+
+.slick-prev {
+    left: 20px;
     border: 0.865px solid #262626;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
     width: 45px;
+    height: 45px;
     border-radius: 86.538px;
     border: 0.865px solid #262626;
     background: #141414;
 }
 
-.date_select_slider .swiper-button-prev {
+
+.slick-next {
+    right: 20px;
     border: 0.865px solid #262626;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 45px;
+    height: 45px;
     border-radius: 86.538px;
     border: 0.865px solid #262626;
     background: #141414;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
 }
 
-.date_select_slider .swiper-button-prev:after {
+/* .slick-nex{} */
+.slick-prev:before {
     content: '' !important;
+    display: flex;
     width: 20px;
     height: 20px;
-    display: flex;
     justify-content: center;
     align-items: center;
     background-image: url(/src/assets/castla.png) !important;
     background-repeat: no-repeat;
 }
 
-.date_select_slider .swiper-button-next:after {
+.slick-next:before {
     content: '' !important;
     display: flex;
     width: 20px;
@@ -42,21 +56,21 @@
     background-repeat: no-repeat;
 }
 
-/* .date_select_slider .swiper-slide{
-    width: 99px !important;
-} */
-
-/* .date_select_slider .swiper{
-    max-width: 789px !important;
-    width: full;
-} */
-
-.slick-track{
-
-/* margin: 0 80px; */
-}
-
-.slick-list{
-    width: 789px;
-    margin: auto;
+@media(max-width:768px) {
+    .slick-list {
+        width: 60%;
+        margin: auto;
+    }
+    .slick-prev {
+        left: 10px;
+       
+    }
+    
+    
+    .slick-next {
+        right: 10px;
+       
+    
+    }
+    
 }
