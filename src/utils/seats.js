@@ -290,7 +290,7 @@ const Seats = [
         seatNumber: "F18",
         status: "available"
     },
-    // 
+    //
     {
         id: 59,
         seatNumber: "F1",
