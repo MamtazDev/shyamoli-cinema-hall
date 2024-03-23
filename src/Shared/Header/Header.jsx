@@ -27,7 +27,7 @@ const Header = () => {
               </div>
               <ul
                 tabIndex={0}
-                className="absolute right-[10px] flex justify-center items-center gap-[20px] bg-primary menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow w-[400px] ">
+                className="absolute right-[10px] flex justify-center items-center gap-[20px] bg-clr_12 menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow w-[400px] ">
                 <li>
                   <Link to="/">Home </Link>
                 </li>
@@ -43,7 +43,7 @@ const Header = () => {
                 <li>
                   <Link
                     to="/downloadTicket"
-                    className="border border-[#FF3D48] bg-[#FF3D48] hover:text-[#FF3D48] hover:border-[#FF3D48] hover:bg-transparent px-[16px] py-[10px] rounded-[8px] shadow-button">
+                    className="border border-clr_12 bg-clr_12 hover:text-white hover:border-clr_12 hover:bg-transparent px-[16px] py-[10px] rounded-[8px] shadow-button">
                     {" "}
                     Get Started
                   </Link>

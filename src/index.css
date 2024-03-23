@@ -4,7 +4,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-
 body {
     font-family: 'Inter', sans-serif;
 }
@@ -24,7 +23,6 @@ body {
     z-index: -1;
 }
 
-
 .swiper-pagination-bullet {
     width: 23px !important;
     height: 4px !important;
@@ -41,9 +39,8 @@ background: var(--Black-20, #333); */
     background: #333;
 }
 
-
 .upcomming_show .swiper-button-prev {
-    left: 89% !important;
+    left: 40% !important;
     border-radius: 50%;
     border: 1px solid #1F1F1F;
     background: #1A1A1A;
@@ -56,7 +53,7 @@ background: var(--Black-20, #333); */
 
 .upcomming_show .swiper-button-prev,
 .upcomming_show .swiper-button-next {
-    top: 36px;
+    top: 95% !important;
 }
 
 .upcomming_show .swiper-button-prev:after {
@@ -75,8 +72,7 @@ background: var(--Black-20, #333); */
     background-size: contain;
 }
 
-
-/* skfs;ldfk;ls */
+/* slider */
 .swiper-button-prev:after {
     content: '' !important;
     display: inline-block;
@@ -96,6 +92,7 @@ background: var(--Black-20, #333); */
 }
 
 .upcomming_show .swiper-button-next {
+    left: 50%;
     border-radius: 50%;
     border: 1px solid #1F1F1F;
     background: #1A1A1A;
@@ -113,7 +110,6 @@ background: var(--Black-20, #333); */
     justify-content: center;
     align-items: center;
 }
-
 
 /* connect_page */
 .connect_page {
@@ -234,7 +230,6 @@ background: var(--Black-20, #333); */
     border-radius: 50%;
     width: 45px;
     background-color: #141414;
-
 }
 
 .cast_slider .swiper-button-prev {
@@ -434,9 +429,21 @@ input:checked~.checkmark {
         --tw-content: '';
         content: var(--tw-content);
     }
+
     .selectStepperText {
         width: 100%;
         /* word-wrap: unset; */
         white-space: nowrap;
     }
+}
+
+.child {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in;
+}
+
+.parant:hover .child {
+    visibility: visible;
+    opacity: 1;
 }

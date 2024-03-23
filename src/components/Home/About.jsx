@@ -13,7 +13,7 @@ const About = () => {
         <>
             <div className='bg-[#100425]'>
                 <div className='max-w-[1280px] w-full mx-auto '>
-                    <div className="grid grid-cols-12 lg:py-[80px] lg:mx-0 mx-[24px]">
+                    <div className="grid grid-cols-12 lg:pb-[80px] lg:mx-0 mx-[24px]">
                         <div className="col-span-12 lg:col-span-6">
                             <div className='hover_img'>
                                 <img className='lg:h-[470px]' src={about} alt="about cinema" />

@@ -1,3 +1,7 @@
+import g1 from "../assets/g1.png";
+import g2 from "../assets/g2.png";
+import g3 from "../assets/g3.png";
+import g4 from "../assets/g4.png";
 import show1 from "../assets/show1.svg";
 import show2 from "../assets/show2.png";
 import show3 from "../assets/show3.svg";
@@ -39,5 +43,40 @@ export const nowShowing = [
     movieDuration: "2h 15m",
     type: "Movie",
     category: "Thriller/Mystery",
+  },
+];
+
+export const ourGallery = [
+  {
+    galleryImg: g1,
+    type: "Outdoor",
+  },
+  {
+    galleryImg: g2,
+    type: "Outdoor",
+  },
+  {
+    galleryImg: g3,
+    type: "Outdoor",
+  },
+  {
+    galleryImg: g4,
+    type: "Outdoor",
+  },
+  {
+    galleryImg: g2,
+    type: "Outdoor",
+  },
+  {
+    galleryImg: g3,
+    type: "Outdoor",
+  },
+  {
+    galleryImg: g1,
+    type: "Outdoor",
+  },
+  {
+    galleryImg: g4,
+    type: "Outdoor",
   },
 ];
