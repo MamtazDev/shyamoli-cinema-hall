@@ -13,7 +13,7 @@ body {
 }
 
 .bg_banner {
-    background-image: url('/src/assets/HeroBanner.svg');
+    background-image: url('/src/assets/HeroBanner.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 849px;
@@ -113,7 +113,7 @@ background: var(--Black-20, #333); */
 
 /* connect_page */
 .connect_page {
-    background-image: url('/src/assets/connect.svg');
+    background-image: url('/src/assets/contact.png');
     background-repeat: no-repeat;
     padding: 58px 0;
     background-size: cover;

@@ -1,8 +1,8 @@
 import React from 'react'
 
-import logo from '../../assets/logo.png'
-import bar from '../../assets/bar.svg'
 import { Link, useLocation } from 'react-router-dom'
+import bar from '../../assets/bar.svg'
+import logo from '../../assets/logo.png'
 
 
 const Header = () => {
@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <div className="absolute z-50 w-full">
       <div
-        className={`w-full text-white bg-clr_12 ${
+        className={`w-full text-white bg-clr_12 py-5 ${
           location.pathname == "/" ? "" : "bg-[#1b1b1b]"
         } `}>
         <div className="navbar lg:flex mx-auto lg:max-w-[1280px] w-full ">
