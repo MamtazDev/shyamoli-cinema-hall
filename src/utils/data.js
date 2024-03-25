@@ -2,10 +2,10 @@ import g1 from "../assets/g1.png";
 import g2 from "../assets/g2.png";
 import g3 from "../assets/g3.png";
 import g4 from "../assets/g4.png";
-import show1 from "../assets/show1.svg";
+import show1 from "../assets/show1.png";
 import show2 from "../assets/show2.png";
-import show3 from "../assets/show3.svg";
-import show4 from "../assets/show4.svg";
+import show3 from "../assets/show3.png";
+import show4 from "../assets/show4.png";
 
 export const nowShowing = [
   {

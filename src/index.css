@@ -13,7 +13,7 @@ body {
 }
 
 .bg_banner {
-    background-image: url('/src/assets/HeroBanner.png');
+    background-image: url('/src/assets/banner_crew.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 849px;

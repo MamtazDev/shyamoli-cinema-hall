@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import show1 from "../../assets/ushow.png";
-import show2 from "../../assets/ushow2.png";
+import show2 from "../../assets/newMovie.png";
 import show3 from "../../assets/ushow3.png";
 
 // import required modules
@@ -48,7 +48,7 @@ const UpComingShow = () => {
           }}
           className="mySwiper text-white ">
           {/* <div className="grid grid-cols-12"> */}
-          <SwiperSlide data-hash="slide1" className="lg:pb-[100px] pb-[180px]">
+          {/* <SwiperSlide data-hash="slide1" className="lg:pb-[100px] pb-[180px]">
             <div className="col-span-12 lg:col-span-4 lg:mx-0 mx-[24px]">
               <div>
                 <img className="mb-[24px]" src={show1} alt="" />
@@ -63,24 +63,28 @@ const UpComingShow = () => {
                 </p>
               </div>
             </div>
-          </SwiperSlide>
-          <SwiperSlide data-hash="slide1" className="lg:pb-[100px] pb-[180px]">
-            <div className="col-span-12 lg:col-span-4 lg:mx-0 mx-[24px]">
-              <div>
-                <img className="mb-[24px]" src={show2} alt="" />
-                <p className="text-[20px] font-bold text-white mb-[12px] ">
-                  Fighter
-                </p>
-                <p className="text-base font-normal text-[#94A3B8] mb-[8px]">
-                  2h 15m • Movie • Thriller/Mystery
-                </p>
-                <p className="text-base font-normal text-[#94A3B8]">
-                  Released : December 24, 2023
-                </p>
+          </SwiperSlide> */}
+
+          <div className="flex justify-center">
+            <div data-hash="slide1" className="lg:pb-[100px] pb-[180px]">
+              <div className="col-span-12 lg:col-span-4 lg:mx-0 mx-[24px]">
+                <div>
+                  <img className="mb-[24px]" src={show2} alt="" />
+                  <p className="text-[20px] font-bold text-white mb-[12px] ">
+                    Fighter
+                  </p>
+                  <p className="text-base font-normal text-[#94A3B8] mb-[8px]">
+                    2h 15m • Movie • Thriller/Mystery
+                  </p>
+                  <p className="text-base font-normal text-[#94A3B8]">
+                    Released : December 24, 2023
+                  </p>
+                </div>
               </div>
             </div>
-          </SwiperSlide>
-          <SwiperSlide data-hash="slide1" className="lg:pb-[100px] pb-[180px]">
+          </div>
+
+          {/* <SwiperSlide data-hash="slide1" className="lg:pb-[100px] pb-[180px]">
             <div className="col-span-12 lg:col-span-4 lg:mx-0 mx-[24px]">
               <div>
                 <img className="mb-[24px]" src={show3} alt="" />
@@ -143,7 +147,7 @@ const UpComingShow = () => {
                 </p>
               </div>
             </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
           {/* </div> */}
         </Swiper>
       </div>

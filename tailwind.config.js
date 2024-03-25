@@ -13,6 +13,10 @@ module.exports = withMT({
         clr_bc: "#BCBEBC",
         clr_12: "#3A8712",
         clr_f0: "#E2E8F0",
+        clr_4f: "#cecece4f",
+        clr_1e: "#D7391E",
+        clr_99: "#999999",
+        clr_26: "#262626",
       },
 
       boxShadow: {

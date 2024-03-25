@@ -1,54 +1,75 @@
-import React, { useState } from 'react';
-import t1 from '../../../assets/tickettype1.png';
-import selectTypecheck from '../../../assets/selectTypecheck.png';
+import React, { useState } from "react";
+import slectTicket from "../../../assets/premium.png";
 
-const TicketType = () => {
-    const [selectPremium, setSelectPremium] = useState(false);
-    const [selectDeluxe, setSelectDeluxe] = useState(false);
-    const handleSelectPremium = () => {
-        setSelectPremium(true);
-        setSelectDeluxe(false);
-    };
+const TicketType = ({
+  selectPremium,
+  selectDeluxe,
+  handleSelectPremium,
+  handleSelectDeluxe,
+}) => {
+  return (
+    <div>
+      <div className="flex lg:flex-row flex-col items-center justify-center gap-[32px]">
+        <button
+          onClick={handleSelectPremium}
+          className={`flex items-center gap-4 w-[485px] ${
+            selectPremium === true
+              ? "border-2 border-transparent bg-white"
+              : "border-2 border-clr_bc "
+          } py-10 px-12 rounded-lg`}>
+          {selectPremium === true ? (
+            <img src={slectTicket} alt="select-ticket" />
+          ) : (
+            <div className="w-[30px] h-[30px] bg-gray-800 rounded-full"></div>
+          )}
 
-    const handleSelectDeluxe = () => {
-        setSelectDeluxe(true);
-        setSelectPremium(false);
-    };
-    return (
-        <div>
-            <div className='flex lg:flex-row flex-col items-center justify-center gap-[32px] '>
-                <div
-                    onClick={handleSelectPremium}
-                    className={`text-white buy_tickets border p-[12px]  relative ${selectPremium ? ' border-[#FF3D48]' : 'border-[#141414]'
-                        } cursor-pointer`}
-                >
-                    {selectPremium && <div className='absolute top-[12px] right-[10px]'>
-                        <img src={selectTypecheck} alt='' />
-                    </div>}
-                    <h3 className=' text-[32px] font-bold leading-[32px] mb-[12px]  '>Premium</h3>
-                    <p className=' text-[26px] font-medium leading-[32px]'>Ticket</p>
-                    <small className='text-[16px] font-medium leading-[32px] mb-[12px]'>300Tk</small>
-                    <img className='mt-[32px] mb-[12px]' src={t1} alt='' />
-                    <p className='text-base font-semibold leading-[24px]  text-[#C6C6C6E6]'>XXXXXXX</p>
-                </div>
+          <div className="flex items-center justify-between gap-[100px] ">
+            <h2
+              className={`${
+                selectPremium === true ? "text-black" : "text-white"
+              } font-semibold text-[30px]`}>
+              Premium
+            </h2>
+            <p
+              className={`${
+                selectPremium === true ? "text-black" : "text-white"
+              } text-lg font-medium`}>
+              BDT 300 TK
+            </p>
+          </div>
+        </button>
 
-                <div
-                    onClick={handleSelectDeluxe}
-                    className={`text-white buy_tickets1 border  p-[12px]  relative ${selectDeluxe ? ' border-[#FF3D48]' : 'border-[#141414]'
-                        } cursor-pointer`}
-                >
-                    {selectDeluxe && <div className='absolute top-[12px] right-[10px]'>
-                        <img src={selectTypecheck} alt='' />
-                    </div>}
-                    <h3 className=' text-[32px] font-bold leading-[32px] mb-[12px]  '>Deluxe</h3>
-                    <p className=' text-[26px] font-medium leading-[32px]'>Ticket</p>
-                    <small className='text-[16px] font-medium leading-[32px] mb-[12px]'>200Tk</small>
-                    <img className='mt-[32px] mb-[12px]' src={t1} alt='' />
-                    <p className='text-base font-semibold leading-[24px]  text-[#C6C6C6E6]'>XXXXXXX</p>
-                </div>
-            </div>
-        </div>
-    );
+        <button
+          onClick={handleSelectDeluxe}
+          className={`flex items-center gap-4 w-[485px] ${
+            selectDeluxe === true
+              ? "border-2 border-transparent bg-white"
+              : "border-2 border-clr_bc "
+          } py-10 px-12 rounded-lg`}>
+          {selectDeluxe === true ? (
+            <img src={slectTicket} alt="select-ticket" />
+          ) : (
+            <div className="w-[30px] h-[30px] bg-gray-800 rounded-full"></div>
+          )}
+
+          <div className="flex items-center justify-between gap-[100px] ">
+            <h2
+              className={`${
+                selectDeluxe === true ? "text-black" : "text-white"
+              } font-semibold text-[30px]`}>
+              Deluxe
+            </h2>
+            <p
+              className={`${
+                selectDeluxe === true ? "text-black" : "text-white"
+              } text-lg font-medium`}>
+              BDT 300 TK
+            </p>
+          </div>
+        </button>
+      </div>
+    </div>
+  );
 };
 
 export default TicketType;

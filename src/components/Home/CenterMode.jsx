@@ -51,9 +51,9 @@ const CenterMode = () => {
         <SwiperSlide data-hash="slide1" className="" key={index}>
           <div className="image relative">
             <img className="mb-[24px]" src={sliderItem.galleryImg} alt="" />
-            <p className="absolute bottom-[18px] left-[18px] text-clr_09 font-semibold text-[30px] text-center block w-[400px] py-3 backdrop-blur-lg rounded ">
+            {/* <p className="absolute bottom-[18px] left-[18px] text-clr_09 font-semibold text-[30px] text-center block w-[400px] py-3 backdrop-blur-lg rounded ">
               Outdoor
-            </p>
+            </p> */}
           </div>
         </SwiperSlide>
       ))}

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/footerLogo.png";
 export const Footer = () => {
   return (
     <>
@@ -37,15 +37,15 @@ export const Footer = () => {
             <ul className="flex gap-[16px] text-base font-normal">
               <Link to="#">
                 {" "}
-                <li>Show Time</li>
+                <li>Terms</li>
               </Link>
               <Link to="#">
                 {" "}
-                <li>Booking</li>
+                <li>Privacy</li>
               </Link>
               <Link to="#">
                 {" "}
-                <li>About Us</li>
+                <li>Cookies</li>
               </Link>
             </ul>
           </div>
