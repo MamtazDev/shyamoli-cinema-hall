@@ -22,29 +22,35 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/movie-details",
+        // path: "/movie-details",
+        path: "#",
         element: <MovieDetails />,
       },
 
       {
-        path: "/buyTickets",
+        // path: "/buyTickets",
+        path: "#",
         element: <DemoStepper />,
       },
 
       {
-        path: "/gallary",
+        // path: "/gallary",
+        path: "#",
         element: <GallaryPage />,
       },
       {
-        path: "/contactUs",
+        // path: "/contactUs",
+        path: "#",
         element: <ContactUs />,
       },
       {
-        path: "/downloadTicket",
+        // path: "/downloadTicket",
+        path: "#",
         element: <DownloadTicket />,
       },
       {
-        path: "/premiumTicket",
+        path: "#",
+        // path: "/premiumTicket",
         element: <PremiumTicket />,
       },
     ],

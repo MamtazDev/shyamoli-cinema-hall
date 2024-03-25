@@ -71,13 +71,13 @@ const UpComingShow = () => {
                 <div>
                   <img className="mb-[24px]" src={show2} alt="" />
                   <p className="text-[20px] font-bold text-white mb-[12px] ">
-                    Fighter
+                    Crew
                   </p>
                   <p className="text-base font-normal text-[#94A3B8] mb-[8px]">
-                    2h 15m • Movie • Thriller/Mystery
+                    2h 06m • Movie • Heist/Comedy
                   </p>
                   <p className="text-base font-normal text-[#94A3B8]">
-                    Released : December 24, 2023
+                    Released : March 29, 2024
                   </p>
                 </div>
               </div>
