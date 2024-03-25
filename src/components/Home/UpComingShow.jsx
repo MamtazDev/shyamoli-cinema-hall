@@ -1,19 +1,17 @@
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import show1 from "../../assets/ushow.png";
 import show2 from "../../assets/newMovie.png";
-import show3 from "../../assets/ushow3.png";
 
 // import required modules
 import {
-    Autoplay,
-    HashNavigation,
-    Navigation,
-    Pagination,
+  Autoplay,
+  HashNavigation,
+  Navigation,
+  Pagination,
 } from "swiper/modules";
 
 const UpComingShow = () => {
@@ -64,6 +62,7 @@ const UpComingShow = () => {
               </div>
             </div>
           </SwiperSlide> */}
+
 
           <div className="flex justify-center">
             <div data-hash="slide1" className="lg:pb-[100px] pb-[180px]">
