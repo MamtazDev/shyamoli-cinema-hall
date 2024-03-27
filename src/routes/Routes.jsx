@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import AuthLayout from "../Layout/AuthLayout";
 import Layout from "../Layout/Layout";
+import CommingSoon from "../Page/CommingSoon";
 import ContactUs from "../Page/ContactUs";
 import DemoStepper from "../Page/DemoStepper";
 import DownloadTicket from "../Page/DownloadTicket";
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
+    errorElement: <CommingSoon/>,
     children: [
       {
         path: "/",

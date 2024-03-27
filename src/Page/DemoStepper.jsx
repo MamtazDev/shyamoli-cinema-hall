@@ -32,6 +32,7 @@ const DemoStepper = () => {
         />
       ),
     },
+    
     {
       label: "Buy Tickets",
       component: (
@@ -42,6 +43,7 @@ const DemoStepper = () => {
         />
       ),
     },
+
     {
       label: "Ticket Summary",
       component: (
@@ -52,6 +54,7 @@ const DemoStepper = () => {
         />
       ),
     },
+
     {
       label: "Details",
       component: (

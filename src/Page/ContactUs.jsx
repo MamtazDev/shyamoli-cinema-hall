@@ -5,8 +5,6 @@ const ContactUs = () => {
     return (
         <>
             <Contact />
-
-
         </>
     )
 }

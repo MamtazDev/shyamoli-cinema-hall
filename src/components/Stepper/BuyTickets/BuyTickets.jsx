@@ -26,7 +26,7 @@ const BuyTickets = ({ complete, handleNext }) => {
         <h2 className="text-primary text-[30px] font-bold leading-[30px] mb-[36px] ">
           Buy Tickets
         </h2>
-        <div className="p-[32px] bg-[#1A1A1A]  border border-[#262626] rounded-[12px]">
+        <div className="p-[32px] bg-[#1A1A1A] border border-[#262626] rounded-[12px] mb-10">
           <div className="text-center text-[24px] font-semibold mb-[24px] ">
             <p>Select Ticket Type</p>
           </div>

@@ -80,3 +80,24 @@ export const ourGallery = [
     type: "Outdoor",
   },
 ];
+
+export const ticketSummery = [
+  {
+    movieName: "MR-9: Do or Die",
+    durations: "1h 45m",
+    showDate: "Jan 24, 2024",
+    showTime: "12:00 PM",
+    seatType: "Premium Ticket",
+    seatNumber: "F1",
+    ticketPrize: "300 Tk",
+  },
+  {
+    movieName: "MR-9: Do or Die",
+    durations: "1h 45m",
+    showDate: "Jan 24, 2024",
+    showTime: "12:00 PM",
+    seatType: "Premium Ticket",
+    seatNumber: "F1",
+    ticketPrize: "300 Tk",
+  },
+];

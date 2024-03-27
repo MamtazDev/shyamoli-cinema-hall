@@ -19,7 +19,7 @@ const TicketQuantity = () => {
         <div className="text-center text-[24px] font-semibold mb-[24px] ">
           <p>Ticket Quantity</p>
         </div>
-        <div className="mx-auto p-[6px] border border-[#3C3C3C] rounded-[12px]  w-[174px] flex gap-[16px] items-center justify-between ">
+        <div className="mx-auto w-full p-[6px] border border-[#3C3C3C] rounded-[12px] flex gap-[16px] items-center justify-between ">
           <button
             className="p-[14px] border border-[#1F1F1F] bg-[#323232] rounded-[8px]"
             onClick={decrement}>

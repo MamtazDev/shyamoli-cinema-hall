@@ -31,21 +31,21 @@ const Connect = () => {
               <label className="text-sm text-[#E2E8F0]">Your name</label>
               <input
                 type="text"
-                className="ps-[10px]  bg-transparent border rounded-[6px] h-[48px] border-[#CBD5E1] "
+                className="ps-[10px] focus:outline-none bg-transparent border rounded-[6px] h-[48px] border-[#CBD5E1] "
               />
             </div>
             <div className="flex flex-col gap-[4px] lg:w-[488px] w-[100%]">
-              <label className="text-sm text-[#E2E8F0]  ">Email address</label>
+              <label className="text-sm text-[#E2E8F0]">Email address</label>
               <input
                 type="email"
-                className="ps-[10px]  bg-transparent border rounded-[6px] h-[48px] border-[#CBD5E1] "
+                className="ps-[10px] focus:outline-none bg-transparent border rounded-[6px] h-[48px] border-[#CBD5E1] "
               />
             </div>
             <div className="flex flex-col gap-[4px] lg:w-[488px] w-[100%]">
               <label className="text-sm text-[#E2E8F0]">Phone number</label>
               <input
                 type="number"
-                className="ps-[10px]  bg-transparent border rounded-[6px] h-[48px] border-[#CBD5E1] "
+                className="ps-[10px] focus:outline-none bg-transparent border rounded-[6px] h-[48px] border-[#CBD5E1] "
               />
             </div>
             <div className="flex flex-col gap-[4px] lg:w-[488px] w-[100%]">
@@ -55,9 +55,9 @@ const Connect = () => {
                 id=""
                 cols="30"
                 rows="10"
-                className="ps-[10px]  bg-transparent border rounded-[6px] h-[112px] border-[#CBD5E1]"></textarea>
+                className="p-[10px] bg-transparent focus:outline-none border rounded-[6px] h-[112px] border-[#CBD5E1]"></textarea>
             </div>
-            <button className="text-white max-w-[200px] w-full bg-clr_12 border border-clr_12 hover:bg-transparent hover:text-white shadow-button py-[12px] rounded-[8px] ">
+            <button className="text-white max-w-[200px] w-full bg-clr_12 border border-clr_12 hover:border-white hover:bg-transparent hover:text-white shadow-button py-[12px] rounded-[8px]">
               Send Message
             </button>
           </form>

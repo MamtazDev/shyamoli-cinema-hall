@@ -67,7 +67,7 @@ const Header = () => {
                 <Link to="/buyTickets">
                   Buy Tickets{" "}
                   {pathname == "/buyTickets" && (
-                    <div className="border border-[#FF3D48] h-[2px] mt-[8px]"></div>
+                    <div className="border border-white h-[2px] mt-[8px]"></div>
                   )}
                 </Link>
               </li>
@@ -75,7 +75,7 @@ const Header = () => {
                 <Link to="/gallary">
                   Gallery{" "}
                   {pathname == "/gallary" && (
-                    <div className="border border-[#FF3D48] h-[2px] mt-[8px]"></div>
+                    <div className="border border-white h-[2px] mt-[8px]"></div>
                   )}
                 </Link>
               </li>
@@ -83,7 +83,7 @@ const Header = () => {
                 <Link to="/contactUs">
                   Contact Us{" "}
                   {pathname == "/contactUs" && (
-                    <div className="border border-[#FF3D48] h-[2px] mt-[8px]"></div>
+                    <div className="border border-white h-[2px] mt-[8px]"></div>
                   )}
                 </Link>
               </li>
